@@ -1,0 +1,278 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ignacio Doe",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Bennett",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+    }
+  ],
+  "events": [
+    {
+      "id": 12,
+      "startTime": "2023-05-25T11:35",
+      "endTime": "2023-05-25T17:35",
+      "description": "HELLLOOOOO",
+      "title": "KIJK EN ZIE",
+      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
+      "categoryIds": "1",
+      "location": "Amsterdam ",
+      "createdBy": "2"
+    },
+    {
+      "id": 14,
+      "title": "POSTMAN",
+      "description": "Have a hangout with the missies",
+      "image": "https://1.bp.blogspot.com/-eIoBtLxh4Uo/T9d62x9YdTI/AAAAAAAANNE/8AdlDDWFxyE/s1600/funny-cat-pictures-part-2-06-13-2012-014.jpg",
+      "location": "Friesland ",
+      "categoryIds": "4",
+      "startTime": "2023-06-16T14:00",
+      "endTime": "2023-06-16T22:00",
+      "createdBy": "2"
+    },
+    {
+      "title": "a new event with ",
+      "description": "this will work",
+      "image": "https://tadaaz.nl/blog/wp-content/uploads/2014/10/Uitnodiging-feest-party.jpg",
+      "categoryIds": "1",
+      "location": "Amsterdam ",
+      "startTime": "2023-05-24T16:31",
+      "endTime": "2023-05-24T22:31",
+      "createdBy": "1",
+      "id": 16
+    },
+    {
+      "title": "bla bla bla jaja ",
+      "description": "waar dan ",
+      "image": "https://media.timeout.com/images/103926031/image.jpg",
+      "categoryIds": "4",
+      "location": "Amsterdam ",
+      "startTime": "2023-05-24T15:21:00.000Z",
+      "endTime": "2023-05-24T21:21:00.000Z",
+      "createdBy": "1",
+      "id": 17
+    },
+    {
+      "title": "nieuw titel yeah",
+      "description": "adaddas",
+      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
+      "categoryIds": "1",
+      "location": "Amsterdam ",
+      "startTime": "2023-07-29T10:58:00.000Z",
+      "endTime": "2023-07-29T10:58:00.000Z",
+      "createdBy": "2",
+      "id": 18
+    },
+    {
+      "title": "beachparty",
+      "description": "trallalalalalala",
+      "image": "https://www.freevector.com/uploads/vector/preview/1615/FreeVector-Vector-Beach-Party.jpg",
+      "categoryIds": "3",
+      "location": "Amsterdam ",
+      "startTime": "2023-06-06T06:00",
+      "endTime": "2023-06-06T23:00",
+      "createdBy": "2",
+      "id": 19
+    },
+    {
+      "title": "New event ",
+      "description": "happening now",
+      "image": "https://www.jongbookings.nl/wp-content/uploads/2017/02/Carnaval-feest.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "1",
+      "startTime": "2023-06-08T11:15",
+      "endTime": "2023-06-08T21:15",
+      "createdBy": "2",
+      "id": 24
+    },
+    {
+      "title": "Party-time",
+      "description": "Have a hangout with the missies",
+      "image": "https://1.bp.blogspot.com/-eIoBtLxh4Uo/T9d62x9YdTI/AAAAAAAANNE/8AdlDDWFxyE/s1600/funny-cat-pictures-part-2-06-13-2012-014.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "4",
+      "startTime": "2023-06-16T14:00",
+      "endTime": "2023-06-16T22:00",
+      "createdBy": "2",
+      "id": 25
+    },
+    {
+      "title": "purrfect sunday",
+      "description": "lots of treats, cuddles and pillows",
+      "image": "https://www.lolwot.com/wp-content/uploads/2015/06/20-lazy-cats-that-will-make-you-lol-20.jpg",
+      "location": "every where it is comfortable",
+      "categoryIds": "5",
+      "startTime": "2023-07-30T09:30",
+      "endTime": "2023-07-30T22:30",
+      "createdBy": "1",
+      "id": 26
+    },
+    {
+      "title": "Catch the dot",
+      "description": "Try the catch the red dot that is there when human is around",
+      "image": "https://image.winudf.com/v2/image/dXMuY2F0Lmxhc2VyLm1ha2VmdW5fc2NyZWVuXzBfMTUxMjk5MDg4MF8wODM/screen-0.jpg?fakeurl=1&type=.jpg",
+      "location": "Home",
+      "categoryIds": "1",
+      "startTime": "2023-08-04T14:00",
+      "endTime": "2023-08-04T16:18",
+      "createdBy": "1",
+      "id": 28
+    },
+    {
+      "title": "pole party",
+      "description": "lets have some fun or laziness at the pole",
+      "image": "https://i.redd.it/fsrl3vx5y6qz.jpg",
+      "location": "who has pole?",
+      "categoryIds": "1",
+      "startTime": "2023-09-06T12:00",
+      "endTime": "92023-06-06T22:00",
+      "createdBy": "1",
+      "id": 29
+    },
+    {
+      "id": 33
+    },
+    {
+      "title": "Diner for two or more",
+      "description": "Wiskas, Felix, Sheba and lots more ",
+      "image": "https://www.wormsandgermsblog.com/files/2011/12/Cat-at-table1.jpg",
+      "location": "Tha Kitchen",
+      "categoryIds": "3",
+      "startTime": "2023-10-06T18:00",
+      "endTime": "2023-10-06T23:00",
+      "createdBy": "1",
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "title": "Feest ",
+      "description": "meer feest",
+      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "4",
+      "startTime": "2023-06-19T05:58",
+      "endTime": "2023-06-19T05:58",
+      "createdBy": "1",
+      "id": 38
+    },
+    {
+      "title": "",
+      "description": "test",
+      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "3",
+      "startTime": "2023-06-19T01:01",
+      "endTime": "2023-06-19T06:01",
+      "createdBy": "1",
+      "id": 39
+    },
+    {
+      "title": "feest",
+      "description": "nu lukt het",
+      "image": "https://a.rgbimg.com/cache1xtn7D/users/x/xy/xymonau/300/oPTKWg0.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "4",
+      "startTime": "2023-06-19T01:05",
+      "endTime": "",
+      "createdBy": "1",
+      "id": 40
+    },
+    {
+      "title": "rewrerew",
+      "description": "weqrqewqwe",
+      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "3",
+      "startTime": "2023-06-19T01:06",
+      "endTime": "2023-06-19T08:06",
+      "createdBy": "1",
+      "id": 41
+    },
+    {
+      "title": "ttry",
+      "description": "tryr",
+      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
+      "location": "rttr",
+      "categoryIds": "2",
+      "startTime": "",
+      "endTime": "",
+      "createdBy": "1",
+      "id": 42
+    },
+    {
+      "title": "ddsd",
+      "description": "test",
+      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "3",
+      "startTime": "2023-06-19T01:11",
+      "endTime": "2023-06-19T07:12",
+      "createdBy": "1",
+      "id": 43
+    },
+    {
+      "id": 44
+    },
+    {
+      "id": 45
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50
+    },
+
+    {
+      "title": "",
+      "description": "test",
+      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "5",
+      "startTime": "2023-06-20T13:36",
+      "endTime": "2023-06-20T19:36",
+      "createdBy": "1",
+      "id": 53
+    }
+  ],
+  "categories": [
+    {
+      "name": "Dance",
+      "id": 1
+    },
+    {
+      "name": "Rock",
+      "id": 2
+    },
+    {
+      "name": "Pop",
+      "id": 3
+    },
+    {
+      "name": "Jazz",
+      "id": 4
+    },
+    {
+      "name": "Blues",
+      "id": 5
+    }
+  ]
+}
