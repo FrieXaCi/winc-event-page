@@ -4,7 +4,7 @@ export const sendRequest = async (endpoint, method, data = null, id = null) => {
   const url = id ? `${ROOT_URL}${endpoint}/${id}` : `${ROOT_URL}${endpoint}`;
 
   const options = {
-    method,
+    method: method,
     headers: {
       'Content-Type': 'application/json',
     },
