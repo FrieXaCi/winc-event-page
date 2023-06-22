@@ -7,7 +7,7 @@ import { Footer } from './ui/Footer';
 
 export const Root = () => {
   return (
-    <div>
+    <div className="root-container">
       <Header />
       <Navigation />
       <Outlet />

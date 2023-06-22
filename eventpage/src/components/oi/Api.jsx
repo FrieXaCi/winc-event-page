@@ -1,50 +1,27 @@
-export const getEvents = async (id) => {
-  const url = id
-    ? `http://localhost:3000/events/${id} `
-    : 'http://localhost:3000/events';
+const ROOT_URL = 'http://localhost:3000/';
 
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw {
-      message: 'Failed to fetch events',
-      statusText: res.statusText,
-      status: res.status,
-    };
+export const sendRequest = async (endpoint, method, data = null, id = null) => {
+  const url = id ? `${ROOT_URL}${endpoint}/${id}` : `${ROOT_URL}${endpoint}`;
+
+  const options = {
+    method: method,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  };
+
+  if (data) {
+    options.body = JSON.stringify(data);
   }
-  const data = await res.json();
-  return data;
-};
 
-export const getUsers = async (id) => {
-  const url = id
-    ? `http://localhost:3000/users/${id}`
-    : 'http://localhost:3000/users';
+  const response = await fetch(url, options);
 
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw {
-      message: 'Failed to fetch users',
-      statusText: res.statusText,
-      status: res.status,
-    };
+  if (!response.ok) {
+    const errorMessage = await response.text();
+    throw new Error(errorMessage);
   }
-  const data = await res.json();
-  return data;
-};
 
-export const getCategories = async (id) => {
-  const url = id
-    ? `http://localhost:3000/categories/${id}`
-    : 'http://localhost:3000/categories';
+  const responseData = await response.json();
 
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw {
-      message: 'Failed to fetch categories',
-      statusText: res.statusText,
-      status: res.status,
-    };
-  }
-  const data = await res.json();
-  return data;
+  return responseData;
 };
