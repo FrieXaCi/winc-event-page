@@ -6,7 +6,11 @@ import { EventsPage, loader as eventListLoader } from './pages/EventsPage';
 import { EventPage, loader as eventLoader } from './pages/EventPage';
 // components
 // EventHelpers
-import { NewEvent } from './components/EventHelpers/NewEvent';
+import {
+  NewEvent,
+  loader as newEventLoader,
+  action as addNewEvent,
+} from './components/EventHelpers/NewEvent';
 // ui
 import { Root } from './components/Root';
 //css
@@ -31,8 +35,8 @@ const router = createBrowserRouter([
       {
         path: '/event/new',
         element: <NewEvent />,
-        //  loader: newEventLoader,
-        // action: addNewEvent,
+        loader: newEventLoader,
+        action: addNewEvent,
       },
     ],
   },
