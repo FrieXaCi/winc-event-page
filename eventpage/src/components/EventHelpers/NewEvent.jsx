@@ -6,13 +6,9 @@ import { sendRequest } from '../oi/Api';
 export const action = async ({ request }) => {
   const formData = Object.fromEntries(await request.formData());
 
-  const newId = await fetch('http://localhost:3000/events', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(formData),
-  })
-    .then((res) => res.json())
-    .then((json) => json.id);
+  const newId = await sendRequest('events', 'POST', formData).then(
+    (json) => json.id
+  );
 
   return redirect(`/event/${newId}`);
 };
