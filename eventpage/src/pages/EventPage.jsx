@@ -82,10 +82,10 @@ export const EventPage = () => {
       </div>
       {/*    <Link to={'/'}>
         <button onClick={deleteEvent}>delete event</button>
-      </Link>
+      </Link>*/}
       <Link to={`/event/${event.id}/update`}>
         <button>Edit event</button>
-      </Link> */}
+      </Link>
     </section>
   );
 };

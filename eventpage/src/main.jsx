@@ -11,6 +11,12 @@ import {
   loader as newEventLoader,
   action as addNewEvent,
 } from './components/EventHelpers/NewEvent';
+import {
+  UpdateEvent,
+  loader as editEventLoader,
+  action as editEvent,
+} from './components/EventHelpers/UpdateEvent';
+
 // ui
 import { Root } from './components/Root';
 //css
@@ -37,6 +43,12 @@ const router = createBrowserRouter([
         element: <NewEvent />,
         loader: newEventLoader,
         action: addNewEvent,
+      },
+      {
+        path: '/event/:eventId/update',
+        element: <UpdateEvent />,
+        loader: editEventLoader,
+        action: editEvent,
       },
     ],
   },
