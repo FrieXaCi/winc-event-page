@@ -10,9 +10,8 @@ export const action = async ({ request, params }) => {
     formData,
     params.eventId
   );
-  // (json) => json.id;
 
-  return redirect('/');
+  return redirect(`/`);
 };
 
 export const loader = async ({ params }) => {

@@ -14,9 +14,17 @@ export const loader = async ({ params }) => {
 export const EventPage = () => {
   const { event, users, categories } = useLoaderData();
 
-  if (!event) {
-    return <div>Loading...</div>;
-  }
+  const deleteEvent = () => {
+    if (window.confirm('Are you 100% sure you want to delete this event?')) {
+      sendRequest('events', 'DELETE', null, event.id)
+        .then(() => {
+          alert('post deleted');
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  };
 
   return (
     <section className="events-page-container">
@@ -80,9 +88,9 @@ export const EventPage = () => {
           ) : null
         )}
       </div>
-      {/*    <Link to={'/'}>
+      <Link to={'/'}>
         <button onClick={deleteEvent}>delete event</button>
-      </Link>*/}
+      </Link>
       <Link to={`/event/${event.id}/update`}>
         <button>Edit event</button>
       </Link>
