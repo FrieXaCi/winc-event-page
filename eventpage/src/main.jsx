@@ -1,6 +1,13 @@
+// imports form libraries
+// react
 import React from 'react';
+// react-dom/client
 import ReactDOM from 'react-dom/client';
+// react-router-dom
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// react-toastify
+import { ToastContainer } from 'react-toastify';
+// imports from files
 // pages
 import { EventsPage, loader as eventListLoader } from './pages/EventsPage';
 import { EventPage, loader as eventLoader } from './pages/EventPage';
@@ -57,5 +64,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </React.StrictMode>
 );
