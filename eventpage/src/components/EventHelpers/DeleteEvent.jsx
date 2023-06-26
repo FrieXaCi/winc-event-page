@@ -1,24 +1,44 @@
 //imports from libraries
 // react-router-dom
-import { redirect } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 // imports from files
 // components/eventhelpers/io/api
 import { sendRequest } from '../oi/Api';
 
-export const DeleteEvent = () => {
+export const DeleteEvent = ({ id }) => {
+  const navigate = useNavigate();
   const handleDelete = () => {
     if (window.confirm('Are you 100% sure you want to delete this event?')) {
-      sendRequest('events', 'DELETE', null, event.id);
-      fetch(`http://localhost:3000/events/${event.id}`, {
-        method: 'DELETE',
-      })
+      sendRequest('events', 'DELETE', null, id)
         .then(() => {
-          alert('post deleted');
-          redirect('/ ');
+          toast.success('🦄 Event succesfully deleted', {
+            position: 'top-center',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          });
+          navigate('/');
         })
         .catch((error) => {
           console.error('Error:', error);
-          alert('error');
+          toast.error(
+            '🦄due to problems, this event is not deleted. please try again later!!',
+            {
+              position: 'top-center',
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: true,
+              progress: undefined,
+              theme: 'colored',
+            }
+          );
         });
     }
   };
