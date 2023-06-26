@@ -23,7 +23,7 @@ export const loader = async () => {
 export const NewEvent = () => {
   // to use users and categories from jsonserver
   const { users, categories } = useLoaderData();
-  console.log(users, categories);
+  //console.log(users, categories);
   // form to create new event
   return (
     <div className="form-container">

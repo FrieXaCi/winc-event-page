@@ -1,7 +1,13 @@
+// imports from libraries
 //react-router-dom
-import { useLoaderData, Link } from 'react-router-dom';
+import { useLoaderData, Link, redirect } from 'react-router-dom';
+// react-toastify
+import { toast } from 'react-toastify';
+// imports from files
 // components/io/api
 import { sendRequest } from '../components/oi/Api';
+// components/eventhelper/deleteEvent
+// import { DeleteEvent } from '../components/EventHelpers/DeleteEvent';
 
 export const loader = async ({ params }) => {
   const event = await sendRequest('events', 'GET', null, params.eventId);
@@ -18,10 +24,30 @@ export const EventPage = () => {
     if (window.confirm('Are you 100% sure you want to delete this event?')) {
       sendRequest('events', 'DELETE', null, event.id)
         .then(() => {
-          alert('post deleted');
+          toast.success('🦄 Event succesfully deleted', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          });
+          redirect('/ ');
         })
         .catch((error) => {
           console.error('Error:', error);
+          toast.error('🦄Couldnt delete this event', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          });
         });
     }
   };
@@ -88,9 +114,7 @@ export const EventPage = () => {
           ) : null
         )}
       </div>
-      <Link to={'/'}>
-        <button onClick={deleteEvent}>delete event</button>
-      </Link>
+      <button onClick={deleteEvent}>Delete event</button>
       <Link to={`/event/${event.id}/update`}>
         <button>Edit event</button>
       </Link>

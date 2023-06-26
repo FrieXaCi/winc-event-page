@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // react-toastify
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // imports from files
 // pages
 import { EventsPage, loader as eventListLoader } from './pages/EventsPage';
@@ -23,6 +24,7 @@ import {
   loader as editEventLoader,
   action as editEvent,
 } from './components/EventHelpers/UpdateEvent';
+import { ErrorPage } from './components/EventHelpers/ErrorPage';
 
 // ui
 import { Root } from './components/Root';
@@ -43,6 +45,7 @@ const router = createBrowserRouter([
         path: '/event/:eventId',
         element: <EventPage />,
         loader: eventLoader,
+        errorElement: <ErrorPage />,
         // action: addComment,
       },
       {
@@ -57,6 +60,7 @@ const router = createBrowserRouter([
         loader: editEventLoader,
         action: editEvent,
       },
+      { path: '*', element: <ErrorPage /> },
     ],
   },
 ]);
