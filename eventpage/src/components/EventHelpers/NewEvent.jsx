@@ -6,11 +6,11 @@ import { sendRequest } from '../oi/Api';
 export const action = async ({ request }) => {
   const formData = Object.fromEntries(await request.formData());
 
-  const newId = await sendRequest('events', 'POST', formData).then(
+  const response = await sendRequest('events', 'POST', formData).then(
     (json) => json.id
   );
 
-  return redirect(`/event/${newId}`);
+  return redirect(`/event/${response}`);
 };
 
 // get users and categories from json server

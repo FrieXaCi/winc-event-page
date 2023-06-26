@@ -1,9 +1,8 @@
-import { redirect, useLoaderData, Form } from 'react-router-dom';
+import { redirect, useLoaderData, Form, useActionData } from 'react-router-dom';
 import { sendRequest } from '../oi/Api';
 
 export const action = async ({ request, params }) => {
   const formData = Object.fromEntries(await request.formData());
-
   const { updateId } = await sendRequest(
     'events',
     'PUT',
@@ -11,7 +10,7 @@ export const action = async ({ request, params }) => {
     params.eventId
   );
 
-  return redirect(`/`);
+  return redirect(`/event/${params.eventId}/`);
 };
 
 export const loader = async ({ params }) => {
