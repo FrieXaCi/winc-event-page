@@ -35,6 +35,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElementlement: <ErrorPage />,
     children: [
       {
         path: '/',
@@ -53,12 +54,14 @@ const router = createBrowserRouter([
         element: <NewEvent />,
         loader: newEventLoader,
         action: addNewEvent,
+        errorElementlement: <ErrorPage />,
       },
       {
         path: '/event/:eventId/update',
         element: <UpdateEvent />,
         loader: editEventLoader,
         action: editEvent,
+        errorElementlement: <ErrorPage />,
       },
       { path: '*', element: <ErrorPage /> },
     ],

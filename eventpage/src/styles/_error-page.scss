@@ -1,0 +1,6 @@
+.error-container {
+  @include flex;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(247, 71, 71);
+}
