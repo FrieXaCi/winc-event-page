@@ -1,23 +1,17 @@
+// imports from libraries
 // react-router-dom
 import { redirect, Form, useLoaderData } from 'react-router-dom';
+// imports from files
 // components/oi/Api
 import { sendRequest } from '../oi/Api';
 
 export const action = async ({ request }) => {
-  const formData = Object.fromEntries(await request.formData());
+  const formData = await request.formData();
+  const postData = Object.fromEntries(formData);
 
-  const newId = await sendRequest('eventS', 'POST', formData).then(
+  const newId = await sendRequest('evenTs', 'POST', postData).then(
     (json) => json.id
   );
-  {
-    if (!newId.ok) {
-      console.error('klopt niet ');
-      alert('ok');
-    } else {
-      console.error('klopt nog meer niet ');
-      alert('not ok');
-    }
-  }
 
   return redirect(`/event/${newId}`);
 };
@@ -37,6 +31,7 @@ export const NewEvent = () => {
   return (
     <div className="form-container">
       <h1>Create new event</h1>
+
       <div className="form-field">
         <Form method="post" id="new-event-form" action="/event/new">
           <label>Title:</label>
