@@ -1,16 +1,53 @@
-import { redirect, useLoaderData, Form, useActionData } from 'react-router-dom';
+// imports from librarie
+import { redirect, useLoaderData, Form } from 'react-router-dom';
+// react-toastify
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// imports from file
 import { sendRequest } from '../oi/Api';
 
 export const action = async ({ request, params }) => {
-  const formData = Object.fromEntries(await request.formData());
-  const { updateId } = await sendRequest(
-    'events',
-    'PUT',
-    formData,
-    params.eventId
-  );
+  const formData = await request.formData();
+  const postData = Object.fromEntries(formData);
 
-  return redirect(`/event/${params.eventId}/`);
+  try {
+    const response = await sendRequest(
+      'events',
+      'PUT',
+      postData,
+      params.eventId
+    );
+
+    toast.success('🦄 Event succesfully updated', {
+      position: 'top-center',
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
+
+    return redirect(`/event/${params.eventId}`);
+  } catch (error) {
+    console.error('Error:', error);
+    toast.error(
+      '🦄due to problems, this event is not updated. please try again later!!',
+      {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
+      }
+    );
+  }
+
+  return null; // Returning null as the response is not used in this case
 };
 
 export const loader = async ({ params }) => {

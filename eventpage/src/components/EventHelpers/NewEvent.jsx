@@ -1,6 +1,9 @@
 // imports from libraries
 // react-router-dom
 import { redirect, Form, useLoaderData } from 'react-router-dom';
+// react-toastify
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // imports from files
 // components/oi/Api
 import { sendRequest } from '../oi/Api';
@@ -9,11 +12,39 @@ export const action = async ({ request }) => {
   const formData = await request.formData();
   const postData = Object.fromEntries(formData);
 
-  const newId = await sendRequest('evenTs', 'POST', postData).then(
-    (json) => json.id
-  );
+  try {
+    const response = await sendRequest('events', 'POST', postData);
 
-  return redirect(`/event/${newId}`);
+    toast.success('🦄 Event succesfully created', {
+      position: 'top-center',
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
+
+    return redirect(`/event/${response.id}`);
+  } catch (error) {
+    console.error('Error:', error);
+    toast.error(
+      '🦄due to problems, this event is not created. please try again later!!',
+      {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: 'colored',
+      }
+    );
+  }
+
+  return null; // Returning null as the response is not used in this case
 };
 
 // get users and categories from json server
@@ -26,6 +57,7 @@ export const loader = async () => {
 export const NewEvent = () => {
   // to use users and categories from jsonserver
   const { users, categories } = useLoaderData();
+
   //console.log(users, categories);
   // form to create new event
   return (

@@ -25,6 +25,7 @@ import {
   loader as editEventLoader,
   action as editEvent,
 } from './components/EventHelpers/UpdateEvent';
+
 import { ErrorPage } from './components/EventHelpers/ErrorPage';
 
 // ui
