@@ -1,16 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "Ignacio Doe",
-      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Jane Bennett",
-      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
-    }
-  ],
   "events": [
     {
       "id": 12,
@@ -134,13 +122,13 @@
       "id": 29
     },
     {
-      "title": "",
-      "description": "",
+      "title": "Party time",
+      "description": "You know, its the middle of the night. Lets go crazy and try to reach all corners of the room.",
       "image": "https://images2.fanpop.com/image/photos/9400000/Funny-Cats-cats-9473111-1600-1200.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
+      "location": "all over house",
+      "categoryIds": "5",
+      "startTime": "2024-05-24T03:00",
+      "endTime": "2024-05-24T03:30",
       "createdBy": "1",
       "id": 33
     },
@@ -409,14 +397,14 @@
       "id": 67
     },
     {
-      "title": "fasfdsfdsfdsf",
-      "description": "",
-      "image": "",
-      "location": "",
+      "title": "update this",
+      "description": "having fun ",
+      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
+      "location": "Amsterdam ",
       "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
+      "startTime": "2023-06-30T11:33",
+      "endTime": "2023-06-30T23:33",
+      "createdBy": "2",
       "id": 69
     },
     {
@@ -462,17 +450,6 @@
       "endTime": "",
       "createdBy": "1",
       "id": 74
-    },
-    {
-      "title": "dsdsda",
-      "description": "ADd",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 75
     },
     {
       "title": "slkjdlkjsdksjadklj",
@@ -803,17 +780,6 @@
       "endTime": "",
       "createdBy": "1",
       "id": 106
-    },
-    {
-      "title": "jghjhjhh",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 107
     },
     {
       "title": "hghgfh",
@@ -1221,6 +1187,17 @@
       "endTime": "",
       "createdBy": "1",
       "id": 144
+    },
+    {
+      "title": "Catnip party",
+      "description": "having a good time with lots of catnip, there is also plenty of food and blankets and pillows so you can relax after sniffing the catnip.",
+      "image": "https://frontpagemeews.com/wp-content/uploads/2019/06/iStock-980233038.jpg",
+      "location": "the livingroom",
+      "categoryIds": "5",
+      "startTime": "2023-08-28T10:00",
+      "endTime": "2023-08-28T22:00",
+      "createdBy": "2",
+      "id": 145
     }
   ],
   "categories": [

@@ -48,7 +48,7 @@ const router = createBrowserRouter([
         path: '/event/:eventId',
         element: <EventPage />,
         loader: eventLoader,
-        errorElement: <ErrorPage />,
+
         // action: addComment,
       },
       {
@@ -56,7 +56,6 @@ const router = createBrowserRouter([
         element: <NewEvent />,
         loader: newEventLoader,
         action: addNewEvent,
-        errorElementlement: <ErrorPage />,
       },
 
       {
@@ -64,7 +63,6 @@ const router = createBrowserRouter([
         element: <UpdateEvent />,
         loader: editEventLoader,
         action: editEvent,
-        errorElementlement: <ErrorPage />,
       },
       { path: '*', element: <ErrorPage /> },
     ],
