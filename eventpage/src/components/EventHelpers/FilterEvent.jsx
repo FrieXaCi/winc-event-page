@@ -104,7 +104,7 @@ export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
       <button onClick={jazz}>Jazz</button>
       <button onClick={pop}>Pop</button>
       <button onClick={rock}>rock</button>
-      <button onClick={dance}>Dance</button>
+      <button onClick={dance}>dance</button>
     </div>
   );
 };
