@@ -1,5 +1,10 @@
 // imports from librarie
-import { redirect, useLoaderData, Form } from 'react-router-dom';
+import {
+  redirect,
+  useLoaderData,
+  Form,
+  useOutletContext,
+} from 'react-router-dom';
 // react-toastify
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -52,14 +57,15 @@ export const action = async ({ request, params }) => {
 
 export const loader = async ({ params }) => {
   const event = await sendRequest('events', 'GET', null, params.eventId);
-  const users = await sendRequest('users', 'GET', null);
-  const categories = await sendRequest('categories', 'GET', null);
+  /*   const users = await sendRequest('users', 'GET', null);
+  const categories = await sendRequest('categories', 'GET', null); */
 
-  return { event, users, categories };
+  return { event /* , users, categories */ };
 };
 
 export const UpdateEvent = () => {
-  const { event, users, categories } = useLoaderData();
+  const { event } = useLoaderData();
+  const { users, categories } = useOutletContext();
 
   return (
     <>

@@ -1,6 +1,6 @@
 // imports from libraries
 //react-router-dom
-import { useLoaderData, Link } from 'react-router-dom';
+import { useLoaderData, Link, useOutletContext } from 'react-router-dom';
 // imports from files
 // components/io/api
 import { sendRequest } from '../components/oi/Api';
@@ -9,14 +9,13 @@ import { DeleteEvent } from '../components/EventHelpers/DeleteEvent';
 
 export const loader = async ({ params }) => {
   const event = await sendRequest('events', 'GET', null, params.eventId);
-  const users = await sendRequest('users', 'GET', null);
-  const categories = await sendRequest('categories', 'GET', null);
 
-  return { event, users, categories };
+  return { event };
 };
 
 export const EventPage = ({ onClick }) => {
-  const { event, users, categories } = useLoaderData();
+  const { event } = useLoaderData();
+  const { users, categories } = useOutletContext();
 
   return (
     <section className="events-page-container">

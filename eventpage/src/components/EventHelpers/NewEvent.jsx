@@ -1,6 +1,6 @@
 // imports from libraries
 // react-router-dom
-import { redirect, Form, useLoaderData } from 'react-router-dom';
+import { redirect, Form, useOutletContext } from 'react-router-dom';
 // react-toastify
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -48,15 +48,9 @@ export const action = async ({ request }) => {
 };
 
 // get users and categories from json server
-export const loader = async () => {
-  const users = await sendRequest('users', 'GET');
-  const categories = await sendRequest('categories', 'GET');
-
-  return { users, categories };
-};
 export const NewEvent = () => {
   // to use users and categories from jsonserver
-  const { users, categories } = useLoaderData();
+  const { users, categories } = useOutletContext();
 
   //console.log(users, categories);
   // form to create new event

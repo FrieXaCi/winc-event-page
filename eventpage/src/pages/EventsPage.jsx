@@ -2,7 +2,7 @@
 // react
 import { useState } from 'react';
 // react-router-dom
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData, useOutletContext } from 'react-router-dom';
 // imports from file
 // component/eventhelpers
 import { SearchEvent } from '../components/EventHelpers/SearchEvent';
@@ -14,15 +14,14 @@ import { sendRequest } from '../components/oi/Api';
 // get data from the json server
 export const loader = async () => {
   const events = await sendRequest('events', 'GET', null);
-  const users = await sendRequest('users', 'GET', null);
-  const categories = await sendRequest('categories', 'GET', null);
 
-  return { events, users, categories };
+  return { events };
 };
 
 export const EventsPage = () => {
   // get data to display on screen
-  const { events, categories } = useLoaderData();
+  const { events } = useLoaderData();
+  const { categories } = useOutletContext();
   //console.log( events, categories);
   // to filter, sort and search events
   const [filterEvent, setFilterEvent] = useState(events);

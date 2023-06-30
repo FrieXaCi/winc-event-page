@@ -16,7 +16,7 @@ import { EventPage, loader as eventLoader } from './pages/EventPage';
 // EventHelpers
 import {
   NewEvent,
-  loader as newEventLoader,
+  // loader as newEventLoader,
   action as addNewEvent,
 } from './components/EventHelpers/NewEvent';
 
@@ -29,7 +29,7 @@ import {
 import { ErrorPage } from './components/EventHelpers/ErrorPage';
 
 // ui
-import { Root } from './components/Root';
+import { Root, loader as rootLoader } from './components/Root';
 //css
 import './styles/main.css';
 
@@ -37,6 +37,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    loader: rootLoader,
     errorElementlement: <ErrorPage />,
     children: [
       {
@@ -54,7 +55,7 @@ const router = createBrowserRouter([
       {
         path: '/event/new',
         element: <NewEvent />,
-        loader: newEventLoader,
+        // loader: newEventLoader,
         action: addNewEvent,
       },
 

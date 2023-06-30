@@ -13,15 +13,15 @@
   ],
   "events": [
     {
-      "id": 12,
+      "title": "KIJK EN ZIE",
+      "description": "HELLLOOOOO",
+      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "3",
       "startTime": "2023-05-25T11:35",
       "endTime": "2023-05-25T17:35",
-      "description": "HELLLOOOOO",
-      "title": "KIJK EN ZIE",
-      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
-      "categoryIds": "1",
-      "location": "Amsterdam ",
-      "createdBy": "2"
+      "createdBy": "1",
+      "id": 12
     },
     {
       "id": 14,
@@ -1210,6 +1210,17 @@
       "endTime": "2023-08-28T22:00",
       "createdBy": "2",
       "id": 145
+    },
+    {
+      "title": "jawel ook de updated data ",
+      "description": "test",
+      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "1",
+      "startTime": "2023-06-30T13:47",
+      "endTime": "2023-06-30T19:47",
+      "createdBy": "1",
+      "id": 146
     }
   ],
   "categories": [
