@@ -57,10 +57,8 @@ export const action = async ({ request, params }) => {
 
 export const loader = async ({ params }) => {
   const event = await sendRequest('events', 'GET', null, params.eventId);
-  /*   const users = await sendRequest('users', 'GET', null);
-  const categories = await sendRequest('categories', 'GET', null); */
 
-  return { event /* , users, categories */ };
+  return { event };
 };
 
 export const UpdateEvent = () => {
