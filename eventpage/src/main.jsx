@@ -42,7 +42,7 @@ const router = createBrowserRouter([
     errorElementlement: <ErrorPage />,
     children: [
       {
-        index: true,
+        path: '/',
         element: <HomePage />,
       },
       {
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
         loader: eventListLoader,
       },
       {
-        path: '/event/:eventId',
+        path: 'event/:eventId',
         element: <EventPage />,
         loader: eventLoader,
 

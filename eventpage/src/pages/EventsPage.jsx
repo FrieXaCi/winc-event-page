@@ -39,7 +39,7 @@ export const EventsPage = () => {
         <section className="card-container">
           {filterEvent.map((event) => (
             <article className="card" key={event.id}>
-              <Link to={`event/${event.id}`}>
+              <Link to={`/event/${event.id}`}>
                 <h1>{event.title}</h1>
                 <h3>{event.location}</h3>
                 <p>{event.descritption}</p>
