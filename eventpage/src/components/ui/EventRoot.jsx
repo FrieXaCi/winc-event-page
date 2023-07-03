@@ -19,7 +19,7 @@ export const EventRoot = () => {
   const { users, categories } = useLoaderData();
 
   return (
-    <div className="event-root-container">
+    <div className="root-container">
       <Navigation />
       <Outlet context={{ users, categories }} />
     </div>

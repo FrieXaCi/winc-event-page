@@ -29,7 +29,6 @@ export const EventsPage = () => {
   // display events on screen with the right data
   return (
     <section className="card-page-container">
-      <h1> List of all events</h1>
       <section className="header-container">
         <section className="sort-search-container">
           <SearchEvent setFilterEvent={setFilterEvent} />
@@ -39,7 +38,7 @@ export const EventsPage = () => {
           <FilterEvent filterEvent={events} setFilterEvent={setFilterEvent} />
         </section>
       </section>
-
+      <h1> List of all events</h1>
       {filterEvent ? (
         <section className="card-container">
           {filterEvent.map((event) => (
