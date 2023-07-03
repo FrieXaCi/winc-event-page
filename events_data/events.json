@@ -530,17 +530,6 @@
       "id": 81
     },
     {
-      "title": "jhjfggf",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 82
-    },
-    {
       "title": "kjhh",
       "description": "fg",
       "image": "",
@@ -926,17 +915,6 @@
       "id": 119
     },
     {
-      "title": "jtyjytjty",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 120
-    },
-    {
       "title": "gfdgdfgd",
       "description": "",
       "image": "",
@@ -1265,6 +1243,17 @@
       "endTime": "",
       "createdBy": "1",
       "id": 150
+    },
+    {
+      "title": "ja het werkt ",
+      "description": "never give up",
+      "image": "https://lynettenoni.files.wordpress.com/2014/03/happy-dance.jpg",
+      "location": "Amsterdam ",
+      "categoryIds": "1",
+      "startTime": "2023-07-04T01:38",
+      "endTime": "2023-07-04T01:38",
+      "createdBy": "1",
+      "id": 151
     }
   ],
   "categories": [

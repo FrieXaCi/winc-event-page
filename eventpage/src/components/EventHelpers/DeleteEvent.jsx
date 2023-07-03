@@ -22,7 +22,7 @@ export const DeleteEvent = ({ id }) => {
             progress: undefined,
             theme: 'colored',
           });
-          navigate('/');
+          navigate('/events');
         })
         .catch((error) => {
           console.error('Error:', error);

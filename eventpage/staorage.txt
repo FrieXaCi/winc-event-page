@@ -1,45 +1,45 @@
-export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
-  /*   // get data to sort on category
-  const getCategories = async () => {
-    const sortCategories = await fetch(
-      'http://localhost:3000/events?categoryIds=1'
-    );
-    console.log(sortCategories);
-    return { sortCategories: await sortCategories.json() };
-  }; */
-
-  const getData = async () => {
-    try {
-      // Build the filtering URL based on the filterEvent state
-      const url = `http://localhost:3000/events${
-        filterEvent
-          ? `?categoryIds=${filterEvent}&_sort=categorie.name&_order=asc`
-          : ''
-      }`;
-
-      const response = await fetch(url);
-
-      if (response.ok) {
-        const responseData = await response.json();
-        filterEvent(responseData);
-      } else {
-        throw new Error('Error retrieving data');
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  return (
-    <div>
-      <button onClick={() => setFilterEvent('Blues')}>Blues</button>
-      <button onClick={() => setFilterEvent('Jazz')}>Jazz</button>
-      <button onClick={() => setFilterEvent('Pop')}>Pop</button>
-      <button onClick={() => setFilterEvent('Rock')}>Rock</button>
-      <button onClick={() => setFilterEvent('Dance')}>Dance</button>
-      <div>
-        <button onClick={getData}>Get Data</button>
-      </div>
-    </div>
-  );
-};
+ <img
+                  className="small-image"
+                  src={event.image}
+                  alt={event.title}
+                />
+                <p>Location: {event.location}</p>
+                <p>
+                  Starts at:{' '}
+                  {new Date(event.startTime).toLocaleDateString([], {
+                    year: 'numeric',
+                    month: 'long',
+                    day: '2-digit',
+                  })}
+                </p>
+                <p>
+                  Time:{' '}
+                  {new Date(event.startTime).toLocaleTimeString([], {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  })}
+                </p>
+                <p>
+                  Ends at:{' '}
+                  {new Date(event.endTime).toLocaleDateString([], {
+                    year: 'numeric',
+                    month: 'long',
+                    day: '2-digit',
+                  })}
+                </p>
+                <p>
+                  Time:{' '}
+                  {new Date(event.endTime).toLocaleTimeString([], {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  })}
+                </p>
+                <div>
+                  {categories.map((categorie) =>
+                    event.categoryIds?.includes(categorie.id) ? (
+                      <div key={categorie.id}>
+                        <p>Categorie: {categorie.name}</p>
+                      </div>
+                    ) : null
+                  )}
+                </div>

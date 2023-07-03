@@ -23,25 +23,36 @@ export const EventsPage = () => {
   const { events } = useLoaderData();
   const { categories } = useOutletContext();
 
-  // to filter, sort and search events
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(7);
   const [filterEvent, setFilterEvent] = useState(events);
 
-  // display events on screen with the right data
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const displayedEvents = filterEvent.slice(startIndex, endIndex);
+
+  const totalPages = Math.ceil(filterEvent.length / itemsPerPage);
+  const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  };
+
   return (
     <section className="card-page-container">
       <section className="header-container">
         <section className="sort-search-container">
           <SearchEvent setFilterEvent={setFilterEvent} />
-          <SortEvent events={events} setFilterEvent={setFilterEvent} />
+          <SortEvent events={filterEvent} setFilterEvent={setFilterEvent} />
         </section>
         <section className="filter-container">
           <FilterEvent filterEvent={events} setFilterEvent={setFilterEvent} />
         </section>
       </section>
       <h1> List of all events</h1>
-      {filterEvent ? (
+      {displayedEvents ? (
         <section className="card-container">
-          {filterEvent.map((event) => (
+          {displayedEvents.map((event) => (
             <article className="card" key={event.id}>
               <Link to={`/event/${event.id}`}>
                 <h1>{event.title}</h1>
@@ -97,6 +108,31 @@ export const EventsPage = () => {
           ))}
         </section>
       ) : null}
+
+      {/* Pagination controls */}
+      <div className="pagination">
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          Previous
+        </button>
+        {pageNumbers.map((page) => (
+          <button
+            key={page}
+            onClick={() => handlePageChange(page)}
+            className={currentPage === page ? 'active' : ''}
+          >
+            {page}
+          </button>
+        ))}
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={endIndex >= filterEvent.length}
+        >
+          Next
+        </button>
+      </div>
     </section>
   );
 };
