@@ -56,10 +56,6 @@ export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
       >
         Blues
       </button>
-
-      <button onClick={() => setSearchParams(new URLSearchParams())}>
-        Clear
-      </button>
     </div>
   );
 };

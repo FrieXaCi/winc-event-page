@@ -8,6 +8,7 @@ import { Link, useLoaderData, useOutletContext } from 'react-router-dom';
 import { SearchEvent } from '../components/EventHelpers/SearchEvent';
 import { SortEvent } from '../components/EventHelpers/SortEvent';
 import { FilterEvent } from '../components/EventHelpers/FilterEvent';
+
 // components /oi/ api
 import { sendRequest } from '../components/oi/Api';
 
@@ -30,9 +31,13 @@ export const EventsPage = () => {
     <section className="card-page-container">
       <h1> List of all events</h1>
       <section className="header-container">
-        <SearchEvent setFilterEvent={setFilterEvent} />
-        <SortEvent events={events} setFilterEvent={setFilterEvent} />
-        <FilterEvent filterEvent={events} setFilterEvent={setFilterEvent} />
+        <section className="sort-search-container">
+          <SearchEvent setFilterEvent={setFilterEvent} />
+          <SortEvent events={events} setFilterEvent={setFilterEvent} />
+        </section>
+        <section className="filter-container">
+          <FilterEvent filterEvent={events} setFilterEvent={setFilterEvent} />
+        </section>
       </section>
 
       {filterEvent ? (

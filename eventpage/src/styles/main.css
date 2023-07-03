@@ -10,8 +10,11 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/background.jpg");
 }
 
 a {
@@ -25,8 +28,31 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: dodgerblue;
+}
+
+.event-root-container {
+  width: 100%;
+}
+.event-root-container .navbar {
+  display: flex;
+  align-items: center;
+}
+.event-root-container .navbar ul {
+  display: flex;
+  list-style: none;
+}
+.event-root-container .navbar ul li {
+  width: 90px;
+  text-align: center;
+  padding: 2px 5px;
+  border: 1px black solid;
+}
+
+.home-page-container {
+  margin: 10px;
+}
+.home-page-container h1 {
+  text-align: center;
 }
 
 .card-page-container {
@@ -34,11 +60,20 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: cyan;
+  background-color: rgb(40, 4, 31);
 }
 .card-page-container .header-container {
+  width: 100%;
+  height: 100px;
   display: flex;
-  background-color: coral;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/headerBackgroundsmall.png");
+}
+.card-page-container .sort-search-container {
+  display: flex;
+  align-items: flex-start;
 }
 .card-page-container .card-container {
   background-color: deeppink;
@@ -50,32 +85,22 @@ a {
   padding: 20px;
 }
 .card-page-container .card-container .card {
+  padding: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  border: 5px solid whitesmoke;
 }
 
-.card-container {
-  background-color: deeppink;
-  width: 600px;
-  height: 700px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: center;
-  padding: 20px;
-}
-.card-container .card {
+.event-page-container {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  border: 5px solid whitesmoke;
 }
 
 .form-container {

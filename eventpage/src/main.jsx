@@ -30,7 +30,11 @@ import {
 import { ErrorPage } from './components/EventHelpers/ErrorPage';
 
 // ui
-import { Root, loader as rootLoader } from './components/Root';
+import { Root } from './components/ui/Root';
+import {
+  EventRoot,
+  loader as eventRootLoader,
+} from './components/ui/EventRoot';
 //css
 import './styles/main.css';
 
@@ -38,7 +42,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
-    loader: rootLoader,
     errorElementlement: <ErrorPage />,
     children: [
       {
@@ -46,30 +49,39 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/events',
-        element: <EventsPage />,
-        loader: eventListLoader,
-      },
-      {
-        path: 'event/:eventId',
-        element: <EventPage />,
-        loader: eventLoader,
+        path: '/',
+        element: <EventRoot />,
+        loader: eventRootLoader,
+        errorElementlement: <ErrorPage />,
+        children: [
+          {
+            path: '/events',
+            element: <EventsPage />,
+            loader: eventListLoader,
+          },
+          {
+            path: 'event/:eventId',
+            element: <EventPage />,
+            loader: eventLoader,
 
-        // action: addComment,
-      },
-      {
-        path: '/event/new',
-        element: <NewEvent />,
-        // loader: newEventLoader,
-        action: addNewEvent,
+            // action: addComment,
+          },
+          {
+            path: '/event/new',
+            element: <NewEvent />,
+            // loader: newEventLoader,
+            action: addNewEvent,
+          },
+
+          {
+            path: '/event/:eventId/update',
+            element: <UpdateEvent />,
+            loader: editEventLoader,
+            action: editEvent,
+          },
+        ],
       },
 
-      {
-        path: '/event/:eventId/update',
-        element: <UpdateEvent />,
-        loader: editEventLoader,
-        action: editEvent,
-      },
       { path: '*', element: <ErrorPage /> },
     ],
   },

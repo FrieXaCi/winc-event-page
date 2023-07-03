@@ -1,11 +1,12 @@
-import React from 'react';
+//importds from libraries
+// react-router-dom
 import { Outlet, useLoaderData } from 'react-router-dom';
+//imports from files
 // components/ ui
-import { Navigation } from './ui/Navigation';
-import { Header } from './ui/Header';
-import { Footer } from './ui/Footer';
+import { Navigation } from './Navigation';
+
 // components/oi
-import { sendRequest } from './oi/Api';
+import { sendRequest } from '../oi/Api';
 
 export const loader = async () => {
   const users = await sendRequest('users', 'GET', null);
@@ -14,15 +15,13 @@ export const loader = async () => {
   return { users, categories };
 };
 
-export const Root = () => {
+export const EventRoot = () => {
   const { users, categories } = useLoaderData();
 
   return (
-    <div className="root-container">
-      <Header />
+    <div className="event-root-container">
       <Navigation />
       <Outlet context={{ users, categories }} />
-      <Footer />
     </div>
   );
 };

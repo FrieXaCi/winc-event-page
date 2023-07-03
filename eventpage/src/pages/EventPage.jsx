@@ -18,7 +18,7 @@ export const EventPage = ({ onClick }) => {
   const { users, categories } = useOutletContext();
 
   return (
-    <section className="events-page-container">
+    <section className="event-page-container">
       <h1>{event.title} </h1>
       <p>{event.description}</p>
 
