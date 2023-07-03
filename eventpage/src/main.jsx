@@ -10,6 +10,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // imports from files
 // pages
+import { HomePage } from './pages/HomePage';
 import { EventsPage, loader as eventListLoader } from './pages/EventsPage';
 import { EventPage, loader as eventLoader } from './pages/EventPage';
 // components
@@ -41,7 +42,11 @@ const router = createBrowserRouter([
     errorElementlement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: '/events',
         element: <EventsPage />,
         loader: eventListLoader,
       },

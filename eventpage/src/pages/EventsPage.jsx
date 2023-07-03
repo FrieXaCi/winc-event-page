@@ -14,7 +14,6 @@ import { sendRequest } from '../components/oi/Api';
 // get data from the json server
 export const loader = async () => {
   const events = await sendRequest('events', 'GET', null);
-
   return { events };
 };
 
@@ -22,7 +21,7 @@ export const EventsPage = () => {
   // get data to display on screen
   const { events } = useLoaderData();
   const { categories } = useOutletContext();
-  //console.log( events, categories);
+
   // to filter, sort and search events
   const [filterEvent, setFilterEvent] = useState(events);
 
@@ -33,10 +32,7 @@ export const EventsPage = () => {
       <section className="header-container">
         <SearchEvent setFilterEvent={setFilterEvent} />
         <SortEvent events={events} setFilterEvent={setFilterEvent} />
-        <FilterEvent
-          filterEvent={filterEvent}
-          setFilterEvent={setFilterEvent}
-        />
+        <FilterEvent filterEvent={events} setFilterEvent={setFilterEvent} />
       </section>
 
       {filterEvent ? (

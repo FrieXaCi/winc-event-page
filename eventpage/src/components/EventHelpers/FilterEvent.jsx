@@ -1,60 +1,65 @@
 // imports from libraries
 // react
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+// react-router-dom
+import { useSearchParams } from 'react-router-dom';
+
 export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
-  const [categories, setCategories] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const typeFilter = searchParams.get('categoryIds');
+  console.log(typeFilter);
 
   useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await fetch('http://localhost:3000/categories');
-        if (response.ok) {
-          const categoriesData = await response.json();
-          setCategories(categoriesData);
-        } else {
-          throw new Error('Error retrieving categories data');
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
+    const displayedEvents = typeFilter
+      ? filterEvent.filter(
+          (event) => event.categoryIds.toLowerCase() === typeFilter
+        )
+      : filterEvent;
 
-    fetchCategories();
-  }, []);
-
-  const getData = async () => {
-    try {
-      const categoryName =
-        categories.find((category) => category.id === filterEvent)?.name || '';
-      const url = `http://localhost:3000/events?categoryIds=${categoryName}`;
-
-      const response = await fetch(url);
-
-      if (response.ok) {
-        const responseData = await response.json();
-        setFilterEvent([responseData]);
-      } else {
-        throw new Error('Error retrieving data');
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const handleFilter = (categoryId) => {
-    setFilterEvent(categoryId);
-    getData(); // Call getData immediately after setting the filter
-  };
+    setFilterEvent(displayedEvents); // update the filterEvent in the parent component
+  }, [typeFilter, filterEvent, setFilterEvent]);
 
   return (
     <div>
-      <div>
-        <button onClick={() => handleFilter('Blues')}>Blues</button>
-        <button onClick={() => handleFilter('Jazz')}>Jazz</button>
-        <button onClick={() => handleFilter('Pop')}>Pop</button>
-        <button onClick={() => handleFilter('Rock')}>Rock</button>
-        <button onClick={() => handleFilter('Dance')}>Dance</button>
-      </div>
+      <button
+        onClick={() =>
+          setSearchParams(new URLSearchParams({ categoryIds: '1' }))
+        }
+      >
+        Dance
+      </button>
+      <button
+        onClick={() =>
+          setSearchParams(new URLSearchParams({ categoryIds: '2' }))
+        }
+      >
+        Rock
+      </button>
+      <button
+        onClick={() =>
+          setSearchParams(new URLSearchParams({ categoryIds: '3' }))
+        }
+      >
+        Pop
+      </button>
+      <button
+        onClick={() =>
+          setSearchParams(new URLSearchParams({ categoryIds: '4' }))
+        }
+      >
+        Jazz
+      </button>
+      <button
+        onClick={() =>
+          setSearchParams(new URLSearchParams({ categoryIds: '5' }))
+        }
+      >
+        Blues
+      </button>
+
+      <button onClick={() => setSearchParams(new URLSearchParams())}>
+        Clear
+      </button>
     </div>
   );
 };
