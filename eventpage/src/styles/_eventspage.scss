@@ -1,0 +1,25 @@
+.card-page-container {
+  width: $width;
+  @include flex;
+  h1 {
+    color: antiquewhite;
+  }
+  background-color: rgb(40, 4, 31);
+
+  .card-container {
+    background-color: deeppink;
+    width: 600px;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+
+    .card {
+      padding: 10px;
+      width: 100%;
+      @include flex;
+      gap: 1rem;
+    }
+  }
+}

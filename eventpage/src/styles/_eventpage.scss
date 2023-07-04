@@ -1,0 +1,5 @@
+.event-page-container {
+  width: $width;
+  height: auto;
+  @include flex;
+}

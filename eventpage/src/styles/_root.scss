@@ -1,0 +1,10 @@
+.root-container {
+  width: $width;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .root-title {
+    color: antiquewhite;
+  }
+}

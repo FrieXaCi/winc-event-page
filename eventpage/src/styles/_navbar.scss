@@ -1,0 +1,15 @@
+.navbar {
+  width: $width;
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      width: 90px;
+      text-align: center;
+      padding: 2px 5px;
+      border: 1px black solid;
+    }
+  }
+}
