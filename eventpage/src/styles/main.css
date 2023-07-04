@@ -25,14 +25,14 @@
 }
 
 .root-container {
+  position: relative;
+  margin: 0, auto;
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.root-container .root-title {
-  color: antiquewhite;
+  justify-content: center;
 }
 
 .home-page-container {
@@ -42,7 +42,23 @@
   text-align: center;
 }
 
-.header-container {
+.root-header {
+  text-align: center;
+  color: #f5f5f5;
+  font-family: "Monoton", cursive, sans-serif;
+}
+
+.card-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(40, 4, 31);
+}
+.card-page-container h1 {
+  color: #f5f5f5;
+}
+.card-page-container .header-container {
   width: 100%;
   height: 100px;
   display: flex;
@@ -51,40 +67,41 @@
   justify-content: center;
   background-image: url("../images/headerBackgroundsmall.png");
 }
-
-.sort-search-container {
+.card-page-container .header-container .root-header {
+  font-family: "Monoton", cursive, sans-serif;
+  color: #f5f5f5;
+}
+.card-page-container .sort-search-container {
   display: flex;
   align-items: flex-start;
 }
-
-.card-page-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(40, 4, 31);
-}
-.card-page-container h1 {
-  color: antiquewhite;
-}
 .card-page-container .card-container {
-  background-color: deeppink;
-  width: 600px;
+  background-color: #cf21b8;
+  width: 300px;
   height: 700px;
   overflow-x: hidden;
   overflow-y: auto;
   text-align: center;
   padding: 20px;
+  gap: 2rem;
+  border-radius: 1rem;
 }
-.card-page-container .card-container .card {
+.card-page-container .card-container article {
+  margin: 20px;
   padding: 10px;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  border: 3px solid #f9b117;
+  border-radius: 2rem;
+  background-color: rgb(97, 12, 208);
+  color: #0a050b;
+}
+.card-page-container .pagination {
+  margin-bottom: 10px;
 }
 
 .event-page-container {
@@ -144,6 +161,15 @@
   font-size: 20px;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+.footer h6 {
+  margin-top: 5px;
+  color: #f5f5f5;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -155,7 +181,7 @@ body {
 
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: #f5f5f5;
 }
 
 .small-image {

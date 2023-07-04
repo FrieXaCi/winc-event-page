@@ -1,10 +1,5 @@
-.header-container {
-  width: $width;
-  height: 100px;
-  @include flex;
-  background-image: url('../images/headerBackgroundsmall.png');
-}
-.sort-search-container {
-  display: flex;
-  align-items: flex-start;
+.root-header {
+  text-align: center;
+  color: $pri-text;
+  font-family: $header;
 }

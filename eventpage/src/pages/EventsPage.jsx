@@ -24,7 +24,7 @@ export const EventsPage = () => {
   const { categories } = useOutletContext();
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(7);
+  const [itemsPerPage, setItemsPerPage] = useState(6);
   const [filterEvent, setFilterEvent] = useState(events);
 
   const startIndex = (currentPage - 1) * itemsPerPage;

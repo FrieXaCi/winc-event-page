@@ -8,17 +8,18 @@
 @import 'eventspage';
 @import 'eventpage';
 @import 'form';
+@import 'footer';
 
 * {
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(40, 4, 31);
+  background-color: $main-background;
 }
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: $pri-text;
 }
 
 .small-image {

@@ -1,25 +1,48 @@
 .card-page-container {
-  width: $width;
   @include flex;
   h1 {
-    color: antiquewhite;
+    color: $pri-text;
   }
-  background-color: rgb(40, 4, 31);
+  background-color: $main-background;
+  .header-container {
+    width: $width;
+    height: 100px;
+    @include flex;
+    background-image: url('../images/headerBackgroundsmall.png');
+    .root-header {
+      font-family: $header;
+      color: $pri-text;
+    }
+  }
+  .sort-search-container {
+    display: flex;
+    align-items: flex-start;
+  }
 
   .card-container {
-    background-color: deeppink;
-    width: 600px;
+    background-color: $sec-background;
+    width: 300px;
     height: 700px;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: center;
     padding: 20px;
+    gap: 2rem;
+    border-radius: 1rem;
 
-    .card {
+    article {
+      margin: 20px;
       padding: 10px;
-      width: 100%;
+      width: 90%;
       @include flex;
-      gap: 1rem;
+      gap: 1.5rem;
+      border: 3px solid $line-color;
+      border-radius: 2rem;
+      background-color: $pri-background;
+      color: $sec-text;
     }
+  }
+  .pagination {
+    margin-bottom: 10px;
   }
 }
