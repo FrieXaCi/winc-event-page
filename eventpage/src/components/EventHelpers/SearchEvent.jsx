@@ -1,3 +1,6 @@
+// import form libraries
+import { FaSistrix } from 'react-icons/fa';
+
 // to search for events
 export const SearchEvent = ({ setFilterEvent }) => {
   // get the data from search
@@ -17,10 +20,9 @@ export const SearchEvent = ({ setFilterEvent }) => {
   };
   // return the searched data
   return (
-    <input
-      onChange={handleSearchEvent}
-      placeholder="search for events"
-      width={300}
-    />
+    <section className="searchfield">
+      <input onChange={handleSearchEvent} placeholder="search for events" />
+      <FaSistrix />
+    </section>
   );
 };

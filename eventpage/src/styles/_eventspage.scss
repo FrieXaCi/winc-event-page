@@ -8,6 +8,8 @@
     width: $width;
     height: 100px;
     @include flex;
+    justify-content: space-evenly;
+    gap: 5px;
     background-image: url('../images/headerBackgroundsmall.png');
     .root-header {
       font-family: $header;
@@ -17,6 +19,7 @@
   .sort-search-container {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   .card-container {

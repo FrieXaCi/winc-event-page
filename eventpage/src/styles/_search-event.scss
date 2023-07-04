@@ -1,0 +1,17 @@
+.searchfield {
+  margin: $marge;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 25px;
+  background-color: $pri-background;
+  input {
+    text-align: center;
+    width: 150px;
+    background-color: $sec-background;
+    border: none;
+    outline: none;
+    color: $pri-text;
+  }
+}

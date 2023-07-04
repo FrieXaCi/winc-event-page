@@ -1,6 +1,6 @@
 .root-container {
   position: relative;
-  margin: 0, auto;
+  margin: $marge;
   width: $width;
   height: auto;
   @include flex;

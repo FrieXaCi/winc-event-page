@@ -1,15 +1,16 @@
 .navbar {
-  width: $width;
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
+
   ul {
+    margin-inline: 0;
     display: flex;
     list-style: none;
     li {
-      width: 90px;
+      margin: 10;
+      width: 100px;
       text-align: center;
       padding: 2px 5px;
-      border: 1px black solid;
+      border: 1px $line-color solid;
     }
   }
 }

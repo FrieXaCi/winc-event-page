@@ -9,7 +9,19 @@ export const HomePage = () => {
     <section className="home-page-container">
       <Link to="/events">
         <h1>See all events</h1>
-        <img className="big-image" src={homepageCat} alt="homePageCat" />
+
+        <article className="homepage-article">
+          <p>
+            Unleash the purr-fect party season with our Cat Party Calendar!
+            Packed with 12 months of feline festivities, it is a claw-some way
+            to celebrate your fur-babies. From birthday bashes to costume
+            carnivals, let your kitties join the fun. Get your paws on our
+            calendar and turn every day into a feline fiesta!
+          </p>
+        </article>
+        <section className="homepage-image-container">
+          <img src={homepageCat} alt="homePageCat" />
+        </section>
       </Link>
     </section>
   );
