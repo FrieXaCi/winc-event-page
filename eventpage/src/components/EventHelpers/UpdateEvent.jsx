@@ -27,7 +27,7 @@ export const action = async ({ request, params }) => {
     );
 
     toast.success('🦄 Event succesfully updated', {
-      icon: ({ theme, type }) => <img src={toastSuccesCat} />,
+      icon: <img src={toastSuccesCat} />,
       position: 'top-center',
       autoClose: 3000,
       hideProgressBar: false,
@@ -50,7 +50,7 @@ export const action = async ({ request, params }) => {
     toast.error(
       '🦄due to problems, this event is not updated. please try again later!!',
       {
-        icon: ({ theme, type }) => <img src={toastErrorCat} />,
+        icon: <img src={toastErrorCat} />,
         position: 'top-center',
         autoClose: 3000,
         hideProgressBar: false,

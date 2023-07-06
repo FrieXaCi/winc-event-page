@@ -13,10 +13,10 @@ export const DeleteEvent = ({ id }) => {
   const navigate = useNavigate();
   const handleDelete = () => {
     if (window.confirm('Are you 100% sure you want to delete this event?')) {
-      sendRequest('events', 'DELETE', null)
+      sendRequest('events', 'DELETE', null, id)
         .then(() => {
           toast.success(' Event succesfully deleted', {
-            icon: ({ theme, type }) => <img src={toastSuccesCat} />,
+            icon: <img src={toastSuccesCat} />,
             position: 'top-center',
             autoClose: 3000,
             hideProgressBar: false,
@@ -40,7 +40,7 @@ export const DeleteEvent = ({ id }) => {
           toast.error(
             'due to problems, this event is not deleted. Please try again later!!',
             {
-              icon: ({ theme, type }) => <img src={toastErrorCat} />,
+              icon: <img src={toastErrorCat} />,
               position: 'top-center',
               autoClose: 3000,
               hideProgressBar: false,
