@@ -2,157 +2,106 @@
   "users": [
     {
       "id": 1,
-      "name": "Ignacio Doe",
-      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
+      "name": "Xara",
+      "image": "https://shimmering-sorbet-03cb6e.netlify.app/images/xara.jpg"
     },
     {
       "id": 2,
-      "name": "Jane Bennett",
-      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+      "name": "Cilla",
+      "image": "https://shimmering-sorbet-03cb6e.netlify.app/images/cilla.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Seb",
+      "image": "https://shimmering-sorbet-03cb6e.netlify.app/images/seb.jpg"
+    },
+    {
+      "id": 4,
+      "name": "mr Whiskers",
+      "image": "https://shimmering-sorbet-03cb6e.netlify.app/images/mr.whiskers.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Juffrouw Theemuts",
+      "image": "https://shimmering-sorbet-03cb6e.netlify.app/images/theemuts.jpg"
     }
   ],
   "events": [
     {
-      "title": "KIJK EN ZIE",
-      "description": "HELLLOOOOO",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "1",
-      "startTime": "2023-09-29T15:00",
-      "endTime": "2023-09-29T22:00",
-      "createdBy": "1",
-      "id": 12
-    },
-    {
-      "id": 14,
-      "title": "POSTMAN",
-      "description": "Have a hangout with the missies",
-      "image": "https://1.bp.blogspot.com/-eIoBtLxh4Uo/T9d62x9YdTI/AAAAAAAANNE/8AdlDDWFxyE/s1600/funny-cat-pictures-part-2-06-13-2012-014.jpg",
-      "location": "Friesland ",
+      "title": "Scratch the curtains",
+      "description": "Attention curious cats and inquisitive kittens! Get ready to sink your claws into a fascinating education experience at the Scratch the Curtains event. Explore the mysteries of the world through interactive workshops and captivating presentations. From history to science, art to literature, this is your chance to scratch the surface of knowledge with playful curiosity. Engage in enlightening discussions, uncover secrets, and satisfy your thirst for learning. Let's leave no curtain unscratched as we embark on an educational journey that will awaken your inner scholar and inspire you to discover the wonders of the world!",
+      "image": "https://c1.staticflickr.com/1/58/225516879_e6fe9cb743_z.jpg?zz=1",
+      "location": "the livingroom",
       "categoryIds": "4",
-      "startTime": "2023-06-16T14:00",
-      "endTime": "2023-06-16T22:00",
-      "createdBy": "2"
-    },
-    {
-      "title": "a new event with ",
-      "description": "this will work",
-      "image": "https://tadaaz.nl/blog/wp-content/uploads/2014/10/Uitnodiging-feest-party.jpg",
-      "categoryIds": "1",
-      "location": "Amsterdam ",
-      "startTime": "2023-05-24T16:31",
-      "endTime": "2023-05-24T22:31",
-      "createdBy": "1",
-      "id": 16
-    },
-    {
-      "title": "bla bla bla jaja ",
-      "description": "waar dan ",
-      "image": "https://media.timeout.com/images/103926031/image.jpg",
-      "categoryIds": "4",
-      "location": "Amsterdam ",
-      "startTime": "2023-05-24T15:21:00.000Z",
-      "endTime": "2023-05-24T21:21:00.000Z",
-      "createdBy": "1",
-      "id": 17
-    },
-    {
-      "title": "nieuw titel yeah",
-      "description": "adaddas",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 18
-    },
-    {
-      "title": "beachparty",
-      "description": "trallalalalalala",
-      "image": "https://www.freevector.com/uploads/vector/preview/1615/FreeVector-Vector-Beach-Party.jpg",
-      "categoryIds": "3",
-      "location": "Amsterdam ",
-      "startTime": "2023-06-06T06:00",
-      "endTime": "2023-06-06T23:00",
-      "createdBy": "2",
-      "id": 19
-    },
-    {
-      "title": "New event ",
-      "description": "happening now",
-      "image": "https://www.jongbookings.nl/wp-content/uploads/2017/02/Carnaval-feest.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "1",
-      "startTime": "2023-06-08T11:15",
-      "endTime": "2023-06-08T21:15",
-      "createdBy": "2",
+      "startTime": "2024-01-05T10:00",
+      "endTime": "2024-01-05T14:00",
+      "createdBy": "4",
       "id": 24
     },
     {
       "title": "Party-time",
-      "description": "Have a hangout with the missies",
+      "description": "Attention all party animals! It's time to unleash your wild side and get ready for the ultimate paw-ty experience at the Party-Time extravaganza! Shake your tails to the groovy beats, indulge in scrumptious treats, and let the laughter fill the air. From interactive games to dance-offs, there's something for every kitty to enjoy. So grab your friends, put on your party hats, and let's create unforgettable memories in a realm where fun knows no bounds!",
       "image": "https://1.bp.blogspot.com/-eIoBtLxh4Uo/T9d62x9YdTI/AAAAAAAANNE/8AdlDDWFxyE/s1600/funny-cat-pictures-part-2-06-13-2012-014.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "4",
-      "startTime": "2023-06-16T14:00",
-      "endTime": "2023-06-16T22:00",
-      "createdBy": "2",
+      "location": "at the attic",
+      "categoryIds": "1",
+      "startTime": "2024-02-25T14:00",
+      "endTime": "2024-02-25T22:00",
+      "createdBy": "3",
       "id": 25
     },
     {
       "title": "purrfect sunday",
-      "description": "lots of treats, cuddles and pillows",
+      "description": "Calling all chill cats! Prepare to embrace the art of relaxation at the Purrrfect Sunday Lazy theme party. Wallow in the lap of luxury as we transform our party space into a haven of cozy comfort. Lounge on plush cushions, bask in the warm sunlight, and indulge in a menu of gourmet treats right at your whiskers. Engage in leisurely activities, such as cat yoga, gentle massages, and soothing grooming sessions. Unwind with soothing tunes and delightful company. This lazy-themed event will make your Sunday purrrfectly blissful, leaving you feline fine and ready for another lazy week ahead.",
       "image": "https://www.lolwot.com/wp-content/uploads/2015/06/20-lazy-cats-that-will-make-you-lol-20.jpg",
       "location": "every where it is comfortable",
-      "categoryIds": "5",
-      "startTime": "2023-07-30T09:30",
-      "endTime": "2023-07-30T22:30",
-      "createdBy": "1",
+      "categoryIds": "2",
+      "startTime": "2023-11-28T09:00",
+      "endTime": "2023-11-28T23:00",
+      "createdBy": "2",
       "id": 26
     },
     {
       "title": "Catch the dot",
-      "description": "Try the catch the red dot that is there when human is around",
+      "description": "Attention, feline thrill-seekers! Prepare to embark on an exhilarating adventure at the Catch the Red Dot extravaganza! Sharpen your senses, unleash your lightning-fast reflexes, and get ready to pounce on the elusive crimson dot. With dizzying spins, lightning-quick dashes, and gravity-defying leaps, this high-stakes game is sure to bring out your inner hunter. Join fellow whiskered warriors in the ultimate pursuit for victory, as we race against the clock to capture that elusive red dot. So flex those claws, focus those eyes, and let the games begin!",
       "image": "https://image.winudf.com/v2/image/dXMuY2F0Lmxhc2VyLm1ha2VmdW5fc2NyZWVuXzBfMTUxMjk5MDg4MF8wODM/screen-0.jpg?fakeurl=1&type=.jpg",
       "location": "Home",
       "categoryIds": "1",
-      "startTime": "2023-08-04T14:00",
-      "endTime": "2023-08-04T16:18",
+      "startTime": "2024-03-05T16:00",
+      "endTime": "2024-03-05T20:00",
       "createdBy": "1",
       "id": 28
     },
     {
       "title": "pole party",
-      "description": "lets have some fun or laziness at the pole",
+      "description": "Hey there, energetic kitties! Get ready to paw-ty like never before at the Purrfect PoleParty! Show off your balance, agility, and grace as you conquer the heights of the purr-lywood pole. Swing, flip, and twirl with feline finesse, igniting the room with your purrfection. Join the clawsome craze and be part of this unforgettable feline 'pole'-bration!",
       "image": "https://i.redd.it/fsrl3vx5y6qz.jpg",
       "location": "who has pole?",
       "categoryIds": "1",
       "startTime": "2023-09-06T12:00",
-      "endTime": "92023-06-06T22:00",
-      "createdBy": "1",
+      "endTime": "2023-09-06T22:00",
+      "createdBy": "4",
       "id": 29
     },
     {
-      "title": "Party time",
-      "description": "You know, its the middle of the night. Lets go crazy and try to reach all corners of the room.",
+      "title": "lets go crazy...",
+      "description": "Meow-nificent news, thrill-seeking kitties! It's time to unleash your inner wild child at the Let's Go Crazy party! Embrace the chaos and let loose in a whirlwind of high-energy feline frenzy. Dash, zoom, and leap through every corner of the house, racing against friends and toys alike. Embrace the madness as you embark on a wild adventure, leaving no cushion unturned and no obstacle un-jumped. This is your chance to channel the exhilarating spirit of the crazy quarter and turn your home into a playground of joy and excitement. Get ready for a purrfectly thrilling escapade like no other!",
       "image": "https://images2.fanpop.com/image/photos/9400000/Funny-Cats-cats-9473111-1600-1200.jpg",
       "location": "all over house",
-      "categoryIds": "5",
+      "categoryIds": "1",
       "startTime": "2024-05-24T03:00",
       "endTime": "2024-05-24T03:30",
       "createdBy": "1",
       "id": 33
     },
     {
-      "title": "Diner for two or more",
-      "description": "Wiskas, Felix, Sheba and lots more ",
+      "title": "Diner for two or more...",
+      "description": "Attention food-loving felines and their human companions! Treat yourselves to an extravagant and delicious Diner for Two or More soirée. Indulge in a feast fit for royalty, featuring succulent dishes adorned with whipped cream, luxurious Sheba delicacies, and other delectable treats. From paw-licking entrées to tantalizing desserts, this culinary adventure promises to satisfy even the most finicky palates. So grab your favorite dining partner(s) and anticipate a sumptuous evening filled with gastronomic delights, laughter, and shared memories. Get ready to savor every morsel, as this dining experience is unlike any other, designed to delight both cat and human alike!",
       "image": "https://www.wormsandgermsblog.com/files/2011/12/Cat-at-table1.jpg",
       "location": "Tha Kitchen",
       "categoryIds": "3",
       "startTime": "2023-10-06T18:00",
-      "endTime": "2023-10-06T23:00",
-      "createdBy": "1",
+      "endTime": "2023-10-06T22:00",
+      "createdBy": "2",
       "id": 35
     },
     {
@@ -160,88 +109,22 @@
       "description": "",
       "image": "https://images4.fanpop.com/image/photos/19800000/3527817554_2e6321f129-jpg-cats-19814097-500-427.jpg",
       "location": "",
-      "categoryIds": "1",
+      "categoryIds": "default",
       "startTime": "",
       "endTime": "",
-      "createdBy": "1",
+      "createdBy": "default",
       "id": 36
     },
     {
-      "title": "",
-      "description": "",
-      "image": "https://i.ytimg.com/vi/3EIbWjkimAs/maxresdefault.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
+      "title": "its a purrrfect fit",
+      "description": "Welcome to the \"It's a Purrrfect Fit\" party, where we celebrate the magical talent of feline contortionists! Prepare to be amazed as our furry friends defy the laws of physics and squeeze into the tiniest of boxes, bags, and hidden nooks. Witness their incredible flexibility and their determination to fit into any space they desire. Join us for a delightful showcase of adorable acrobatics and marvel at the ingenuity of our feline companions. Remember, in the world of cats, everything is a potential cozy spot waiting to be conquered!",
+      "image": "https://m.cdn.blog.hu/sz/szubkultur/image/funny-liquid-cats-2.jpg",
+      "location": "all what fits you",
+      "categoryIds": "4",
+      "startTime": "2023-11-10T14:30",
+      "endTime": "2023-11-10T20:30",
+      "createdBy": "2",
       "id": 37
-    },
-    {
-      "title": "Feest ",
-      "description": "meer feest",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "4",
-      "startTime": "2023-06-19T05:58",
-      "endTime": "2023-06-19T05:58",
-      "createdBy": "1",
-      "id": 38
-    },
-    {
-      "title": "",
-      "description": "test",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "3",
-      "startTime": "2023-06-19T01:01",
-      "endTime": "2023-06-19T06:01",
-      "createdBy": "1",
-      "id": 39
-    },
-    {
-      "title": "feest",
-      "description": "nu lukt het",
-      "image": "https://a.rgbimg.com/cache1xtn7D/users/x/xy/xymonau/300/oPTKWg0.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "4",
-      "startTime": "2023-06-19T01:05",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 40
-    },
-    {
-      "title": "rewrerew",
-      "description": "weqrqewqwe",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "3",
-      "startTime": "2023-06-19T01:06",
-      "endTime": "2023-06-19T08:06",
-      "createdBy": "1",
-      "id": 41
-    },
-    {
-      "title": "ttry",
-      "description": "tryr",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "rttr",
-      "categoryIds": "2",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 42
-    },
-    {
-      "title": "ddsd",
-      "description": "test",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "3",
-      "startTime": "2023-06-19T01:11",
-      "endTime": "2023-06-19T07:12",
-      "createdBy": "1",
-      "id": 43
     },
     {
       "title": "",
@@ -270,10 +153,10 @@
       "description": "Master your skills on how to throw the fase of the table,",
       "image": "https://images2.fanpop.com/image/photos/9400000/Funny-Cats-cats-9473343-1600-1200.jpg",
       "location": "the livingroom",
-      "categoryIds": "2",
+      "categoryIds": "4",
       "startTime": "2023-12-31T23:59",
       "endTime": "2024-01-01T00:00",
-      "createdBy": "1",
+      "createdBy": "4",
       "id": 46
     },
     {
@@ -310,17 +193,6 @@
       "id": 49
     },
     {
-      "title": "",
-      "description": "test",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "5",
-      "startTime": "2023-06-20T13:36",
-      "endTime": "2023-06-20T19:36",
-      "createdBy": "1",
-      "id": 53
-    },
-    {
       "title": "scratch the curtain",
       "description": "all over the house",
       "image": "https://welovecatsandkittens.com/wp-content/uploads/2016/02/cat-on-curtains-caption.jpg",
@@ -330,17 +202,6 @@
       "endTime": "2023-06-22T23:07",
       "createdBy": "1",
       "id": 55
-    },
-    {
-      "title": "grgregre",
-      "description": "gdfgds",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "dfss",
-      "categoryIds": "1",
-      "startTime": "2023-06-22T18:28",
-      "endTime": "2023-06-22T22:28",
-      "createdBy": "1",
-      "id": 58
     },
     {
       "title": "Eek a Mouse",
@@ -365,28 +226,6 @@
       "id": 63
     },
     {
-      "title": "khfhsd",
-      "description": "jhdskjdhkasjdhk",
-      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "3",
-      "startTime": "2023-06-22T05:47",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 64
-    },
-    {
-      "title": "ccs",
-      "description": "vxvx",
-      "image": "https://1.bp.blogspot.com/-7SeOe5-NUe4/WbhlfRdzXpI/AAAAAAABG54/giKRIKxchg4iUvSeAhpHBI7BUft1HPUDgCLcBGAs/s1600/feest.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "2",
-      "startTime": "2023-06-22T22:48",
-      "endTime": "2023-06-22T23:48",
-      "createdBy": "1",
-      "id": 65
-    },
-    {
       "title": "yrty",
       "description": "ryrtrt",
       "image": "https://i.pinimg.com/originals/36/08/d7/3608d7ade19855156733678409b62684.png",
@@ -409,28 +248,6 @@
       "id": 67
     },
     {
-      "title": "update this",
-      "description": "having fun ",
-      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "1",
-      "startTime": "2023-06-30T11:33",
-      "endTime": "2023-06-30T23:33",
-      "createdBy": "2",
-      "id": 69
-    },
-    {
-      "title": "fgfdgfdgsd",
-      "description": "test",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 70
-    },
-    {
       "title": "Chill time",
       "description": "just do nothing, absolutly nothing. find a comfortable place to sleep and do nothing.",
       "image": "https://i.pinimg.com/originals/d8/c6/7c/d8c67c4ce6754459d492b0441b5b4e17.jpg",
@@ -440,193 +257,6 @@
       "endTime": "2023-06-26T23:30",
       "createdBy": "1",
       "id": 71
-    },
-    {
-      "title": "bababababba",
-      "description": "",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 72
-    },
-    {
-      "title": "vxvzvVzV",
-      "description": "vzXZXVzx",
-      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 74
-    },
-    {
-      "title": "slkjdlkjsdksjadklj",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 76
-    },
-    {
-      "title": "Update event",
-      "description": "fggsdsd",
-      "image": "https://a.rgbimg.com/cache1xtn7D/users/x/xy/xymonau/300/oPTKWg0.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "1",
-      "startTime": "2023-06-27T19:05",
-      "endTime": "2023-06-27T23:05",
-      "createdBy": "1",
-      "id": 77
-    },
-    {
-      "title": "nog een keer",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 78
-    },
-    {
-      "title": "dsfsdafas",
-      "description": "dsfdsaadf",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "ddsf",
-      "categoryIds": "2",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 79
-    },
-    {
-      "title": "sasasa",
-      "description": "saA",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 80
-    },
-    {
-      "title": "jjfhfgf",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 81
-    },
-    {
-      "title": "kjhh",
-      "description": "fg",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 83
-    },
-    {
-      "title": "kfjfkjdfkjdfkj",
-      "description": "kjdfkjdkjf",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 84
-    },
-    {
-      "title": "khekhwekh",
-      "description": "jksjfdkjs",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 86
-    },
-    {
-      "title": "uiiyu",
-      "description": "hkhg",
-      "image": "fgjfj",
-      "location": "hg",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 87
-    },
-    {
-      "title": "hthfdhh",
-      "description": "hhh",
-      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 88
-    },
-    {
-      "title": "ereewq",
-      "description": "reewq",
-      "image": "",
-      "location": "ewq",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 89
-    },
-    {
-      "title": "gfdgds",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 90
-    },
-    {
-      "title": "hfiwoi",
-      "description": "",
-      "image": "https://1.bp.blogspot.com/-7SeOe5-NUe4/WbhlfRdzXpI/AAAAAAABG54/giKRIKxchg4iUvSeAhpHBI7BUft1HPUDgCLcBGAs/s1600/feest.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 91
-    },
-    {
-      "title": "this is 9it",
-      "description": "",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 92
     },
     {
       "title": "kjgdghsdjhg",
@@ -640,72 +270,6 @@
       "id": 94
     },
     {
-      "title": "",
-      "description": "",
-      "image": "https://a.rgbimg.com/cache1xtn7D/users/x/xy/xymonau/300/oPTKWg0.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 96
-    },
-    {
-      "title": "kjgjfglkj",
-      "description": "",
-      "image": "https://1.bp.blogspot.com/-7SeOe5-NUe4/WbhlfRdzXpI/AAAAAAABG54/giKRIKxchg4iUvSeAhpHBI7BUft1HPUDgCLcBGAs/s1600/feest.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 97
-    },
-    {
-      "title": "uytuytu",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 98
-    },
-    {
-      "title": "",
-      "description": "",
-      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 99
-    },
-    {
-      "title": "hahahahah",
-      "description": "",
-      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 100
-    },
-    {
-      "title": "test ebn create",
-      "description": "have a great day at the park",
-      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "3",
-      "startTime": "2023-06-27T11:08",
-      "endTime": "2023-06-27T16:08",
-      "createdBy": "1",
-      "id": 101
-    },
-    {
       "title": "check it out",
       "description": "new new new ",
       "image": "https://www.boredpanda.com/blog/wp-content/uploads/2015/09/happy-cat-smiling-17__700.jpg",
@@ -715,17 +279,6 @@
       "endTime": "2023-06-27T16:10",
       "createdBy": "1",
       "id": 102
-    },
-    {
-      "title": "fdfdaf",
-      "description": "dfadf",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "2",
-      "id": 103
     },
     {
       "title": "nnvbnn",
@@ -739,17 +292,6 @@
       "id": 104
     },
     {
-      "title": "gdgfdg",
-      "description": "fgsdsf",
-      "image": "",
-      "location": "fdsfgfd",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 105
-    },
-    {
       "title": "jkglkjvkjk",
       "description": "kjdfkhdfkj",
       "image": "https://i.imgflip.com/l8cg1.jpg",
@@ -761,323 +303,15 @@
       "id": 106
     },
     {
-      "title": "hghgfh",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 108
-    },
-    {
-      "title": "dfsaf",
-      "description": "SAFS",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 109
-    },
-    {
-      "title": "jghfjhjhggf",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 110
-    },
-    {
-      "title": "gfdgsd",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 111
-    },
-    {
-      "title": "hjhfhkjjk",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 112
-    },
-    {
-      "title": "DDSAAS",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 113
-    },
-    {
-      "title": "sfdfd",
-      "description": "dsafadsds",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 115
-    },
-    {
-      "title": "rffdf",
-      "description": "fddsas",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "das",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 116
-    },
-    {
-      "title": "gfdgdfgd",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 121
-    },
-    {
-      "title": "saAA",
-      "description": "",
-      "image": "https://1.bp.blogspot.com/-7SeOe5-NUe4/WbhlfRdzXpI/AAAAAAABG54/giKRIKxchg4iUvSeAhpHBI7BUft1HPUDgCLcBGAs/s1600/feest.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "2",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 122
-    },
-    {
-      "title": "HFDHFDHFGHFG",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 123
-    },
-    {
-      "title": "tyetyte",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 125
-    },
-    {
-      "title": "kkkhgh",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 126
-    },
-    {
-      "title": "",
-      "description": "",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 128
-    },
-    {
-      "title": "ASASA",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 129
-    },
-    {
-      "title": "ffdafddfa",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 130
-    },
-    {
-      "title": "eterttr",
-      "description": "rtrewre",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 131
-    },
-    {
-      "title": "gdfgdf",
-      "description": "fdfdf",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 133
-    },
-    {
-      "title": "dsdasd",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 134
-    },
-    {
-      "title": "dsdsa",
-      "description": "sadSDA",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 135
-    },
-    {
-      "title": "gfdgfdg",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 137
-    },
-    {
-      "title": "ggfdfdfg",
-      "description": "",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 138
-    },
-    {
-      "title": "dhdhdfhd",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 139
-    },
-    {
-      "title": "gfgfgsdf",
-      "description": "sfgdfd",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 140
-    },
-    {
-      "title": "bhgfhfdgfdsgfd",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 142
-    },
-    {
-      "title": "",
-      "description": "",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 143
-    },
-    {
-      "title": "ghfsdfg",
-      "description": "",
-      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 144
-    },
-    {
       "title": "Catnip party",
-      "description": "having a good time with lots of catnip, there is also plenty of food and blankets and pillows so you can relax after sniffing the catnip.",
+      "description": "catnipparty  Paws up, party-loving felines! Get ready to purrty at the most whisker-twitching celebration of the year - the CatnipParty! This soirée is exclusively designed for claw-some cats like you who know how to have a magically mewvelous time.  Indulge in a feast fit for a king - bowls brimming with delicious tuna treats, catnip-infused gourmet delights, and gourmet milk served in crystal saucers. Don't forget to sharpen those claws and be ready for a playful game of chase-the-laser-pointer, or show off your acrobatic skills with a high-flying leap through the hoop of joy.  Dance to the rhythm of the jingly balls and paw-some beats as the DJ spins the latest \"meow-sic\" hits. Display your coolest moves during the Kitty Dance-Off, where the most agile and graceful furry dancers win furrytastic prizes.  Need a break from the paw-some activities? Treat yourself to a glamorous grooming session at our purrfect pampering station. We have a team of professional groomers ready to give you the ultimate makeover while you relax and enjoy some chin scratches.  As the sun sets on this magical night, gather around for the grand finale - a spectacular fireworks display tailored specifically to feline vision, featuring dazzling colors and mesmerizing patterns that will leave you in awe.  So mark your calendars, cats, and don't miss the CatnipParty! It's going to be a night filled with joyful pawsitivity, mewsic, delicious treats, and memories that will make you want to bask in the sun for days afterward. Let's raise our paws in celebration and make this party legendary!",
       "image": "https://frontpagemeews.com/wp-content/uploads/2019/06/iStock-980233038.jpg",
       "location": "the livingroom",
-      "categoryIds": "5",
+      "categoryIds": "2",
       "startTime": "2023-08-28T10:00",
       "endTime": "2023-08-28T22:00",
       "createdBy": "2",
       "id": 145
-    },
-    {
-      "title": "jawel ook de updated data ",
-      "description": "test",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Amsterdam ",
-      "categoryIds": "1",
-      "startTime": "2023-06-30T13:47",
-      "endTime": "2023-06-30T19:47",
-      "createdBy": "1",
-      "id": 146
     },
     {
       "title": "fgdgd",
@@ -1089,28 +323,6 @@
       "endTime": "",
       "createdBy": "1",
       "id": 147
-    },
-    {
-      "title": "",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 148
-    },
-    {
-      "title": "dfssdfsad",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 149
     },
     {
       "title": "ja het werkt ",
@@ -1126,57 +338,24 @@
     {
       "title": "",
       "description": "",
-      "image": "https://1.bp.blogspot.com/-7SeOe5-NUe4/WbhlfRdzXpI/AAAAAAABG54/giKRIKxchg4iUvSeAhpHBI7BUft1HPUDgCLcBGAs/s1600/feest.jpg",
+      "image": "",
       "location": "",
-      "categoryIds": "1",
+      "categoryIds": "4",
       "startTime": "",
       "endTime": "",
-      "createdBy": "1",
+      "createdBy": "5",
       "id": 152
     },
     {
       "title": "",
       "description": "",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "Home",
+      "image": "",
+      "location": "",
       "categoryIds": "1",
       "startTime": "",
       "endTime": "",
-      "createdBy": "1",
+      "createdBy": "5",
       "id": 153
-    },
-    {
-      "title": "yiyi",
-      "description": "test",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 154
-    },
-    {
-      "title": "dfdsfdsa",
-      "description": "test",
-      "image": "https://www.sailingeurope.com/blog/wp-content/uploads/2013/08/M_BeachParty.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 155
-    },
-    {
-      "title": "",
-      "description": "",
-      "image": "https://www.partybus.co.uk/wp-content/uploads/2.jpg",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "1",
-      "id": 156
     }
   ],
   "categories": [

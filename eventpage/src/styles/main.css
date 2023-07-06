@@ -110,7 +110,7 @@
   height: 100px;
   width: 100%;
   margin: 10px;
-  margin-bottom: -4px;
+  margin-bottom: -5px;
   background-image: url("../images/headerBackgroundsmall.png");
   background-repeat: round;
 }
@@ -120,7 +120,7 @@
   font-size: 2rem;
 }
 .card-page-container .card-container {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,38 +128,53 @@
   width: 300px;
   height: 600px;
   overflow-x: hidden;
-  overflow-y: auto;
   text-align: center;
-  gap: 0.5rem;
   border-radius: 1rem;
 }
-.card-page-container .card-container article {
+.card-page-container .card-container .card {
   width: 100%;
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border: 2px double #f9b117;
   border-radius: 1rem;
   background-color: rgb(97, 12, 208);
+}
+.card-page-container .card-container .card .card-header {
+  margin: 5px, auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-page-container .card-container .card .card-header h1 {
+  font-size: 1.1rem;
+}
+.card-page-container .card-container .card .card-header p {
+  font-size: 0.7rem;
   color: #0a050b;
 }
-.card-page-container .card-container article p {
-  font-size: 0.7rem;
-}
-.card-page-container .card-container article .card-body {
+.card-page-container .card-container .card .card-body {
+  margin-bottom: 5px;
+  width: 100%;
   display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 2rem;
+  font-size: 0.6rem;
 }
-.card-page-container .card-container article .card-body img {
+.card-page-container .card-container .card .card-body img {
+  margin-left: 20px;
   width: 75px;
   height: 75px;
+}
+.card-page-container .card-container .card .card-body .card-body-items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .card-page-container .pagination {
   text-align: center;
   width: 100%;
-  /*  margin: 5px;
-  padding: 5px */
   margin: 20px;
 }
 .card-page-container .pagination button {
@@ -253,7 +268,6 @@
   display: inline-block;
   width: 30%;
   height: 2rem;
-  border: 1px solid red;
   bottom: 0;
   cursor: pointer;
   font-size: 20px;

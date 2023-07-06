@@ -20,24 +20,24 @@ export const loader = async () => {
 export const EventsPage = () => {
   // get data to display on screen
   const { events } = useLoaderData();
-
   const { categories } = useOutletContext();
-
+  // use to show data on the screen
+  const [filterEvent, setFilterEvent] = useState(events);
+  // get data for pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
-  const [filterEvent, setFilterEvent] = useState(events);
-
+  //set data for pagination
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const displayedEvents = filterEvent.slice(startIndex, endIndex);
-
+  // calculate data for pagination
   const totalPages = Math.ceil(filterEvent.length / itemsPerPage);
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
-
+  // handle next en prev buttons
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
   };
-
+  // show pagenumbers for pagination
   const renderPageNumbers = pageNumbers.map((pageNumber, index) => {
     if (
       pageNumber === 1 || // Always show the first page
@@ -57,16 +57,13 @@ export const EventsPage = () => {
       pageNumber === currentPage - 2 || // Show first '...' if there are more than 2 pages between current page
       pageNumber === currentPage + 2 // Show last '...' if there are more than 2 pages between current page
     ) {
-      return (
-        <span className="dots" key={index}>
-          . . .
-        </span>
-      );
+      return <span key={index}>. . .</span>;
     } else {
       return null; // Return null for other page numbers
     }
   });
 
+  // display the events on screen
   return (
     <section className="card-page-container">
       <section className="header-container">
@@ -95,13 +92,9 @@ export const EventsPage = () => {
                 </section>
 
                 <section className="card-body">
-                  <img
-                    className="small-image"
-                    src={event.image}
-                    alt={event.title}
-                  />
+                  <img src={event.image} alt={event.title} />
 
-                  <section>
+                  <section className="card-body-items">
                     <p>Location: {event.location}</p>
                     <p>
                       {new Date(event.startTime).toLocaleDateString([], {

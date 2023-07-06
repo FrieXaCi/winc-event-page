@@ -125,6 +125,7 @@ export const UpdateEvent = () => {
                   {categorie.name}
                 </option>
               ))}
+              <option value="default">Choose a Categorie</option>
             </select>
             <label> Starts at:</label>
             <input
@@ -138,13 +139,13 @@ export const UpdateEvent = () => {
               name="endTime"
               defaultValue={event.endTime}
             />
-            <label>Select User</label>
             <select name="createdBy" placeholder="Select user">
               {users.map((user) => (
                 <option key={user.id} value={user.id}>
                   {user.name}
                 </option>
               ))}
+              <option value="default">Choose a User</option>
             </select>
             <input type="hidden" name="id" value={event.id} />
             <button type="submit">Save</button>
