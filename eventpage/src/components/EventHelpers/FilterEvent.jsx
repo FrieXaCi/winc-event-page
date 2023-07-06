@@ -7,7 +7,7 @@ import { useSearchParams } from 'react-router-dom';
 export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const typeFilter = searchParams.get('categoryIds');
-  console.log(typeFilter);
+  // console.log(typeFilter);
 
   useEffect(() => {
     const displayedEvents = typeFilter
@@ -16,7 +16,7 @@ export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
         )
       : filterEvent;
 
-    setFilterEvent(displayedEvents); // update the filterEvent in the parent component
+    setFilterEvent(displayedEvents);
   }, [typeFilter, filterEvent, setFilterEvent]);
 
   return (

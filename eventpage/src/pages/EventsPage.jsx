@@ -55,13 +55,16 @@ export const EventsPage = () => {
             <article className="card" key={event.id}>
               <Link to={`/event/${event.id}`}>
                 <h1>{event.title}</h1>
-                <p>{event.description}</p>
+                <p>Location: {event.location}</p>
                 <img
                   className="small-image"
                   src={event.image}
                   alt={event.title}
                 />
-                <p>Location: {event.location}</p>
+                <p>
+                  {event.description.slice(0, 20)}
+                  {event.description.length > 20 ? '.....' : ''}
+                </p>
                 <p>
                   {new Date(event.startTime).toLocaleDateString([], {
                     year: 'numeric',

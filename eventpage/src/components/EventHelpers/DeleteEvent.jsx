@@ -15,7 +15,7 @@ export const DeleteEvent = ({ id }) => {
     if (window.confirm('Are you 100% sure you want to delete this event?')) {
       sendRequest('events', 'DELETE', null, id)
         .then(() => {
-          toast.success(' Event succesfully deleted', {
+          toast.success('🦄 Event succesfully deleted', {
             icon: <img src={toastSuccesCat} />,
             position: 'top-center',
             autoClose: 3000,
@@ -38,7 +38,7 @@ export const DeleteEvent = ({ id }) => {
         .catch((error) => {
           console.error('Error:', error);
           toast.error(
-            'due to problems, this event is not deleted. Please try again later!!',
+            '🦄due to problems, this event is not deleted. please try again later!!',
             {
               icon: <img src={toastErrorCat} />,
               position: 'top-center',
