@@ -20,6 +20,7 @@ export const loader = async () => {
 export const EventsPage = () => {
   // get data to display on screen
   const { events } = useLoaderData();
+
   const { categories } = useOutletContext();
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -37,6 +38,35 @@ export const EventsPage = () => {
     setCurrentPage(newPage);
   };
 
+  const renderPageNumbers = pageNumbers.map((pageNumber, index) => {
+    if (
+      pageNumber === 1 || // Always show the first page
+      pageNumber === totalPages || // Always show the last page
+      (pageNumber >= currentPage - 1 && pageNumber <= currentPage + 1) // Show current page and 2 adjacent pages
+    ) {
+      return (
+        <span
+          key={index}
+          className={pageNumber === currentPage ? 'active' : ''}
+          onClick={() => handlePageChange(pageNumber)}
+        >
+          {pageNumber}
+        </span>
+      );
+    } else if (
+      pageNumber === currentPage - 2 || // Show first '...' if there are more than 2 pages between current page
+      pageNumber === currentPage + 2 // Show last '...' if there are more than 2 pages between current page
+    ) {
+      return (
+        <span className="dots" key={index}>
+          . . .
+        </span>
+      );
+    } else {
+      return null; // Return null for other page numbers
+    }
+  });
+
   return (
     <section className="card-page-container">
       <section className="header-container">
@@ -47,54 +77,64 @@ export const EventsPage = () => {
         <section className="filter-container">
           <FilterEvent filterEvent={events} setFilterEvent={setFilterEvent} />
         </section>
+        <section className="events-title">
+          <h1>List of all events:</h1>
+        </section>
       </section>
-      <h1 className="events-title">List of all events:</h1>
       {displayedEvents ? (
         <section className="card-container">
           {displayedEvents.map((event) => (
             <article className="card" key={event.id}>
               <Link to={`/event/${event.id}`}>
-                <h1>{event.title}</h1>
-                <p>Location: {event.location}</p>
-                <img
-                  className="small-image"
-                  src={event.image}
-                  alt={event.title}
-                />
-                <p>
-                  {event.description.slice(0, 20)}
-                  {event.description.length > 20 ? '.....' : ''}
-                </p>
-                <p>
-                  {new Date(event.startTime).toLocaleDateString([], {
-                    year: 'numeric',
-                    month: 'long',
-                    day: '2-digit',
-                  })}
-                </p>
-                <p>
-                  Starts at:{' '}
-                  {new Date(event.startTime).toLocaleTimeString([], {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                  })}
-                </p>
-                <p>
-                  Ends at:{' '}
-                  {new Date(event.endTime).toLocaleTimeString([], {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                  })}
-                </p>
-                <div>
-                  {categories.map((categorie) =>
-                    event.categoryIds?.includes(categorie.id) ? (
-                      <div key={categorie.id}>
-                        <p>Categorie: {categorie.name}</p>
-                      </div>
-                    ) : null
-                  )}
-                </div>
+                <section className="card-header">
+                  <h1>{event.title}</h1>
+                  <p>
+                    {event.description.slice(0, 20)}
+                    {event.description.length > 20 ? '.....' : ''}
+                  </p>
+                </section>
+
+                <section className="card-body">
+                  <img
+                    className="small-image"
+                    src={event.image}
+                    alt={event.title}
+                  />
+
+                  <section>
+                    <p>Location: {event.location}</p>
+                    <p>
+                      {new Date(event.startTime).toLocaleDateString([], {
+                        year: 'numeric',
+                        month: 'long',
+                        day: '2-digit',
+                      })}
+                    </p>
+                    <p>
+                      Starts at:{' '}
+                      {new Date(event.startTime).toLocaleTimeString([], {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                      })}
+                    </p>
+                    <p>
+                      Ends at:{' '}
+                      {new Date(event.endTime).toLocaleTimeString([], {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                      })}
+                    </p>
+                    <div>
+                      {categories.map((categorie) =>
+                        event.categoryIds?.includes(categorie.id) ? (
+                          <div key={categorie.id}>
+                            <p>Categorie: {categorie.name}</p>
+                          </div>
+                        ) : null
+                      )}
+                    </div>
+                  </section>
+                </section>
               </Link>
             </article>
           ))}
@@ -109,15 +149,9 @@ export const EventsPage = () => {
         >
           Prev
         </button>
-        {pageNumbers.map((page) => (
-          <button
-            key={page}
-            onClick={() => handlePageChange(page)}
-            className={currentPage === page ? 'active' : ''}
-          >
-            {page}
-          </button>
-        ))}
+
+        {renderPageNumbers}
+
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={endIndex >= filterEvent.length}

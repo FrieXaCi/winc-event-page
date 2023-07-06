@@ -7,7 +7,9 @@ export const HomePage = () => {
   return (
     <section className="home-page-container">
       <Link to="/events">
-        <h1>See all events</h1>
+        <section className="homepage-title">
+          <h1>See all events</h1>
+        </section>
         <article className="homepage-article">
           <p>
             Unleash the purr-fect party season with our Cat Party Calendar!
