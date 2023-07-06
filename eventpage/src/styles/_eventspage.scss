@@ -1,25 +1,31 @@
 .card-page-container {
+  width: 100vw;
   @include flex;
   h1 {
     color: $pri-text;
   }
-  background-color: $main-background;
+  background-color: $pri-background;
   .header-container {
+    margin: 5px;
     width: $width;
-    height: 100px;
+    //  height: 100px;
     @include flex;
     justify-content: space-evenly;
     gap: 5px;
-    background-image: url('../images/headerBackgroundsmall.png');
-    .root-header {
-      font-family: $header;
-      color: $pri-text;
-    }
   }
   .sort-search-container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+  }
+  .events-title {
+    width: $width;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: -4px;
+    height: 100px;
+    background-image: url('../images/headerBackgroundsmall.png');
+    background-repeat: round;
   }
 
   .card-container {
@@ -38,14 +44,20 @@
       padding: 10px;
       width: 90%;
       @include flex;
-      gap: 1.5rem;
+      gap: 0.5rem;
       border: 3px solid $line-color;
-      border-radius: 2rem;
+      border: 10px double $line-color;
+      border-radius: 1rem;
       background-color: $pri-background;
       color: $sec-text;
     }
   }
   .pagination {
-    margin-bottom: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    button {
+      width: 6px;
+      border: none;
+    }
   }
 }

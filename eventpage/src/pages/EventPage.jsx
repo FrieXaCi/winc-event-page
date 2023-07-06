@@ -20,12 +20,10 @@ export const EventPage = ({ onClick }) => {
   return (
     <section className="event-page-container">
       <h1>{event.title} </h1>
+      <h2>{event.location}</h2>
+      <img className="event-image" src={event.image} alt={event.title} />
       <p>{event.description}</p>
-
-      <img className="big-image" src={event.image} alt={event.title} />
-      <p>{event.location}</p>
       <p>
-        Starts at:{' '}
         {new Date(event.startTime).toLocaleDateString([], {
           year: 'numeric',
           month: 'long',
@@ -33,7 +31,7 @@ export const EventPage = ({ onClick }) => {
         })}
       </p>
       <p>
-        Time:{' '}
+        Starts at:{' '}
         {new Date(event.startTime).toLocaleTimeString([], {
           hour: '2-digit',
           minute: '2-digit',
@@ -41,14 +39,6 @@ export const EventPage = ({ onClick }) => {
       </p>
       <p>
         Ends at:{' '}
-        {new Date(event.endTime).toLocaleDateString([], {
-          year: 'numeric',
-          month: 'long',
-          day: '2-digit',
-        })}
-      </p>
-      <p>
-        Time:{' '}
         {new Date(event.endTime).toLocaleTimeString([], {
           hour: '2-digit',
           minute: '2-digit',
@@ -63,26 +53,28 @@ export const EventPage = ({ onClick }) => {
           ) : null
         )}
       </div>
-      <div>
+      <section className="user-container">
         {users.map((user) =>
           user.id == event.createdBy ? (
-            <div key={user.id}>
-              <img className="small-image" src={user.image} />
-            </div>
+            <section key={user.id}>
+              <img className="user-image" src={user.image} />
+            </section>
           ) : null
         )}
         {users.map((user) =>
           user.id == event.createdBy ? (
-            <div key={user.id}>
+            <section key={user.id}>
               <p>{user.name}</p>
-            </div>
+            </section>
           ) : null
         )}
-      </div>
-      <DeleteEvent onclick={onClick} id={event.id} />
-      <Link to={`/event/${event.id}/update`}>
-        <button>Edit event</button>
-      </Link>
+      </section>
+      <section className="event-button-container">
+        <DeleteEvent onclick={onClick} id={event.id} />
+        <Link to={`/event/${event.id}/update`}>
+          <button>Edit event</button>
+        </Link>
+      </section>
     </section>
   );
 };

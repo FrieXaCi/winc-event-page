@@ -26,35 +26,28 @@ export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
           setSearchParams(new URLSearchParams({ categoryIds: '1' }))
         }
       >
-        Dance
+        Active
       </button>
       <button
         onClick={() =>
           setSearchParams(new URLSearchParams({ categoryIds: '2' }))
         }
       >
-        Rock
+        Lazy
       </button>
       <button
         onClick={() =>
           setSearchParams(new URLSearchParams({ categoryIds: '3' }))
         }
       >
-        Pop
+        Food
       </button>
       <button
         onClick={() =>
           setSearchParams(new URLSearchParams({ categoryIds: '4' }))
         }
       >
-        Jazz
-      </button>
-      <button
-        onClick={() =>
-          setSearchParams(new URLSearchParams({ categoryIds: '5' }))
-        }
-      >
-        Blues
+        School
       </button>
     </div>
   );

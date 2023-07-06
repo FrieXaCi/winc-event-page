@@ -8,7 +8,6 @@ import { Link, useLoaderData, useOutletContext } from 'react-router-dom';
 import { SearchEvent } from '../components/EventHelpers/SearchEvent';
 import { SortEvent } from '../components/EventHelpers/SortEvent';
 import { FilterEvent } from '../components/EventHelpers/FilterEvent';
-
 // components /oi/ api
 import { sendRequest } from '../components/oi/Api';
 
@@ -24,7 +23,7 @@ export const EventsPage = () => {
   const { categories } = useOutletContext();
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(6);
+  const [itemsPerPage] = useState(6);
   const [filterEvent, setFilterEvent] = useState(events);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -49,15 +48,14 @@ export const EventsPage = () => {
           <FilterEvent filterEvent={events} setFilterEvent={setFilterEvent} />
         </section>
       </section>
-      <h1> List of all events</h1>
+      <h1 className="events-title">List of all events:</h1>
       {displayedEvents ? (
         <section className="card-container">
           {displayedEvents.map((event) => (
             <article className="card" key={event.id}>
               <Link to={`/event/${event.id}`}>
                 <h1>{event.title}</h1>
-                <h3>{event.location}</h3>
-                <p>{event.descritption}</p>
+                <p>{event.description}</p>
                 <img
                   className="small-image"
                   src={event.image}
@@ -65,7 +63,6 @@ export const EventsPage = () => {
                 />
                 <p>Location: {event.location}</p>
                 <p>
-                  Starts at:{' '}
                   {new Date(event.startTime).toLocaleDateString([], {
                     year: 'numeric',
                     month: 'long',
@@ -73,7 +70,7 @@ export const EventsPage = () => {
                   })}
                 </p>
                 <p>
-                  Time:{' '}
+                  Starts at:{' '}
                   {new Date(event.startTime).toLocaleTimeString([], {
                     hour: '2-digit',
                     minute: '2-digit',
@@ -81,14 +78,6 @@ export const EventsPage = () => {
                 </p>
                 <p>
                   Ends at:{' '}
-                  {new Date(event.endTime).toLocaleDateString([], {
-                    year: 'numeric',
-                    month: 'long',
-                    day: '2-digit',
-                  })}
-                </p>
-                <p>
-                  Time:{' '}
                   {new Date(event.endTime).toLocaleTimeString([], {
                     hour: '2-digit',
                     minute: '2-digit',
@@ -115,7 +104,7 @@ export const EventsPage = () => {
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
-          Previous
+          Prev
         </button>
         {pageNumbers.map((page) => (
           <button

@@ -10,6 +10,9 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // imports from file
 import { sendRequest } from '../oi/Api';
+// images
+import toastErrorCat from '../../images/toast-error-cat-update.jpg';
+import toastSuccesCat from '../../images/toast-succes-cat-update.jpg';
 
 export const action = async ({ request, params }) => {
   const formData = await request.formData();
@@ -24,14 +27,21 @@ export const action = async ({ request, params }) => {
     );
 
     toast.success('🦄 Event succesfully updated', {
+      icon: ({ theme, type }) => <img src={toastSuccesCat} />,
       position: 'top-center',
-      autoClose: 2000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,
       draggable: true,
       progress: undefined,
-      theme: 'colored',
+      theme: 'ligth',
+      style: {
+        background: 'linear-gradient(to right, #3ab445, #abfd1d, #8efc45 )',
+        color: '#071000',
+        width: '450px',
+        height: '600px',
+      },
     });
 
     return redirect(`/event/${params.eventId}`);
@@ -40,14 +50,21 @@ export const action = async ({ request, params }) => {
     toast.error(
       '🦄due to problems, this event is not updated. please try again later!!',
       {
+        icon: ({ theme, type }) => <img src={toastErrorCat} />,
         position: 'top-center',
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
         progress: undefined,
-        theme: 'colored',
+        theme: 'ligth',
+        style: {
+          background: 'linear-gradient(to right, #ff0000, #ff8080)',
+          color: 'white',
+          width: '350px',
+          height: '500px',
+        },
       }
     );
   }

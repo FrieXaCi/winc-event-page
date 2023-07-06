@@ -7,6 +7,9 @@ import 'react-toastify/dist/ReactToastify.css';
 // imports from files
 // components/oi/Api
 import { sendRequest } from '../oi/Api';
+// images
+import toastErrorCat from '../../images/toast-error-cat-create.jpg';
+import toastSuccesCat from '../../images/toast-succes-cat-create.jpg';
 
 export const action = async ({ request }) => {
   const formData = await request.formData();
@@ -16,14 +19,21 @@ export const action = async ({ request }) => {
     const response = await sendRequest('events', 'POST', postData);
 
     toast.success('🦄 Event succesfully created', {
+      icon: ({ theme, type }) => <img src={toastSuccesCat} />,
       position: 'top-center',
-      autoClose: 2000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,
       draggable: true,
       progress: undefined,
-      theme: 'colored',
+      theme: 'ligth',
+      style: {
+        background: 'linear-gradient(to right, #3ab445, #abfd1d, #8efc45 )',
+        color: '#071000',
+        width: '450px',
+        height: '600px',
+      },
     });
 
     return redirect(`/event/${response.id}`);
@@ -32,14 +42,21 @@ export const action = async ({ request }) => {
     toast.error(
       '🦄due to problems, this event is not created. please try again later!!',
       {
+        icon: ({ theme, type }) => <img src={toastErrorCat} />,
         position: 'top-center',
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
         draggable: true,
         progress: undefined,
-        theme: 'colored',
+        theme: 'ligth',
+        style: {
+          background: 'linear-gradient(to right, #ff0000, #ff8080)',
+          color: 'white',
+          width: '350px',
+          height: '500px',
+        },
       }
     );
   }
@@ -84,7 +101,7 @@ export const NewEvent = () => {
           <label> Starts at:</label>
           <input type="datetime-local" name="startTime" />
           <label>Ends at:</label>
-          <input type="datetime-local" name="endTime" />
+          <input type="time" name="endTime" />
           <label>Select User</label>
           <select name="createdBy" placeholder="Select user">
             {users.map((user) => (

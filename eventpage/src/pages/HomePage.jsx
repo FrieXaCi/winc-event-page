@@ -1,7 +1,6 @@
 // imports from librarie
 import React from 'react';
-//import from files
-import homepageCat from '../images/homepageCat.jpg';
+// react-router-dom
 import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
@@ -9,7 +8,6 @@ export const HomePage = () => {
     <section className="home-page-container">
       <Link to="/events">
         <h1>See all events</h1>
-
         <article className="homepage-article">
           <p>
             Unleash the purr-fect party season with our Cat Party Calendar!
@@ -19,9 +17,6 @@ export const HomePage = () => {
             calendar and turn every day into a feline fiesta!
           </p>
         </article>
-        <section className="homepage-image-container">
-          <img src={homepageCat} alt="homePageCat" />
-        </section>
       </Link>
     </section>
   );
