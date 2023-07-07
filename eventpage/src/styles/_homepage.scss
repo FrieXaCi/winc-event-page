@@ -1,13 +1,17 @@
 .home-page-container {
+  margin: $marge;
   position: relative;
-  @include flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  //background-image: url('../images/homepage-background-medium.jpg');
+  background-image: url('../images/homepage-background.jpg');
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-clip: border-box;
-  margin: $marge;
+
   .homepage-title {
     height: 90px;
     width: $width;
@@ -17,13 +21,17 @@
     top: 0;
     h1 {
       text-align: center;
+      color: $pri-text;
     }
   }
 
   .homepage-article {
     margin: $marge;
+    margin-top: 100px;
     width: 70%;
     height: 100%;
+    background-color: $sec-background;
+    opacity: 0.8;
 
     p {
       padding: 15px;
