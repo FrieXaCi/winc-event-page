@@ -25,7 +25,7 @@
 
 .root-container {
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@
 }
 
 .card-page-container {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -186,10 +186,10 @@
 }
 
 .event-page-container {
-  margin: 5px;
+  margin-top: 5px;
   margin-bottom: 15px;
   padding: 10px;
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -199,22 +199,51 @@
   background-color: rgb(97, 12, 208);
   color: #f5f5f5;
   font-size: 0.7rem;
+  /*  p {
+    width: 250px;
+    height: auto;
+  } */
 }
-.event-page-container .event-image {
-  width: 90%;
-  height: inherit;
+.event-page-container .card-body-event {
+  margin: 0 auto;
+}
+.event-page-container .card-body-event img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+}
+.event-page-container .card-body-event p {
+  width: 250px;
+  height: auto;
+}
+.event-page-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+}
+.event-page-container .time-container {
+  margin: 0;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
+}
+.event-page-container .time-container p {
+  width: 100px;
+  text-align: left;
 }
 .event-page-container .user-container {
+  width: 90%;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 20px;
   background-color: #cf21b8;
-  width: 100%;
-  height: 65px;
+  border-radius: 1rem;
 }
 .event-page-container .user-container .user-image {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -373,7 +402,8 @@ button:hover::before, button:hover::after, button:focus::before, button:focus::a
 }
 
 body {
-  background-color: rgb(40, 4, 31);
+  width: 96%;
+  background-color: rgb(97, 12, 208);
   font-family: "Poppins", sans-serif;
 }
 

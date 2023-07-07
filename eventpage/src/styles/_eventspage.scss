@@ -1,5 +1,5 @@
 .card-page-container {
-  width: 100vw;
+  width: $width;
   height: 100%;
   @include flex;
   background-color: $pri-background;
@@ -88,7 +88,7 @@
   }
   .pagination {
     text-align: center;
-    width: 100%;
+    width: $width;
 
     margin: 20px;
     button {

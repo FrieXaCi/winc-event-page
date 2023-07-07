@@ -19,11 +19,13 @@ export const EventPage = ({ onClick }) => {
 
   return (
     <section className="event-page-container">
-      <h1>{event.title} </h1>
-      <h2>{event.location}</h2>
+      <section className="card-body-event">
+        <h1>{event.title} </h1>
+        <h2>{event.location}</h2>
 
-      <img className="big-image" src={event.image} alt={event.title} />
-      <p>{event.description}</p>
+        <img className="big-image" src={event.image} alt={event.title} />
+        <p>{event.description}</p>
+      </section>
       <p>
         {new Date(event.startTime).toLocaleDateString([], {
           year: 'numeric',
@@ -31,29 +33,31 @@ export const EventPage = ({ onClick }) => {
           day: '2-digit',
         })}
       </p>
-      <p>
-        Starts at:{' '}
-        {new Date(event.startTime).toLocaleTimeString([], {
-          hour: '2-digit',
-          minute: '2-digit',
-        })}
-      </p>
-      <p>
-        Ends at:{' '}
-        {new Date(event.endTime).toLocaleTimeString([], {
-          hour: '2-digit',
-          minute: '2-digit',
-        })}
-      </p>
-      <div>
+      <section className="time-container">
+        <p>
+          Starts at:{' '}
+          {new Date(event.startTime).toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+          })}
+        </p>
+        <p>
+          Ends at:{' '}
+          {new Date(event.endTime).toLocaleTimeString([], {
+            hour: '2-digit',
+            minute: '2-digit',
+          })}
+        </p>
+      </section>
+      <section>
         {categories.map((categorie) =>
           event.categoryIds?.includes(categorie.id) ? (
-            <div key={categorie.id}>
+            <section key={categorie.id}>
               <p>Categorie: {categorie.name}</p>
-            </div>
+            </section>
           ) : null
         )}
-      </div>
+      </section>
       <section className="user-container">
         {users.map((user) =>
           user.id == event.createdBy ? (
