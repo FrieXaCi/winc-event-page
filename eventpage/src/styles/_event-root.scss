@@ -1,0 +1,5 @@
+.event-root-container {
+  width: $width;
+  margin: $marge;
+  @include flex;
+}

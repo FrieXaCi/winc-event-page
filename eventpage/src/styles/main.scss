@@ -3,6 +3,7 @@
 @import 'error-page';
 @import 'navbar';
 @import 'root';
+@import 'event-root';
 @import 'homepage';
 @import 'header';
 @import 'eventspage';
@@ -26,15 +27,4 @@ body {
 a {
   text-decoration: none;
   color: $pri-text;
-}
-
-.small-image {
-  margin: $marge;
-  height: 150px;
-  width: 150px;
-}
-.big-image {
-  margin: $marge;
-  height: 300px;
-  width: 300px;
 }

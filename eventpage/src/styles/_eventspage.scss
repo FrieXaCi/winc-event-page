@@ -99,4 +99,41 @@
       padding: 5px;
     }
   }
+
+  // media queries
+  // tablet
+  @media screen and (min-width: 400px) and (max-width: 1025px) {
+    .card-container {
+      width: 700px;
+      height: 800px;
+      .card {
+        width: 600;
+        height: 500px;
+        .card-header {
+          h1 {
+            font-size: 1.5rem;
+          }
+          p {
+            font-size: 1rem;
+            color: $pri-text;
+          }
+        }
+        .card-body {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: 1rem;
+          font-size: 1rem;
+          img {
+            margin-left: 0px;
+            width: 150px;
+            height: 150px;
+          }
+          .card-body-items {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
 }

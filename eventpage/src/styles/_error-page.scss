@@ -1,6 +1,33 @@
-.error-container {
+.error-page {
   @include flex;
-  width: 90%;
-  height: 90%;
-  background-color: rgb(247, 71, 71);
+  width: $width;
+  height: 100vh;
+  background-color: cornflowerblue;
+  .error-container {
+    @include flex;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(247, 71, 71);
+
+    h1 {
+      font-weight: 800;
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: 0.7rem;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    img {
+      width: $width;
+      height: 100%;
+    }
+    button {
+      width: 60px;
+      height: 25px;
+
+      font-size: 0.5rem;
+    }
+  }
 }
