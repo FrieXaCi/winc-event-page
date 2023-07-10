@@ -18,7 +18,8 @@
   box-sizing: border-box;
 }
 body {
-  width: 96%;
+  width: $width;
+  margin: $marge;
   background-color: $pri-background;
   font-family: $text;
 }

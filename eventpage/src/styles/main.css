@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 .navbar ul {
-  margin-inline: 0;
+  margin-bottom: 20px;
   display: flex;
   list-style: none;
 }
@@ -265,10 +265,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  width: 100%;
   height: 100%;
-  margin: 0vw;
-  padding: 5vw;
+  margin: 0 auto;
+  padding: 1.5rem;
   background-color: rgb(175, 59, 139);
 }
 .form-container label {
@@ -290,25 +290,26 @@
   display: block;
   text-align: center;
   font-size: 20px;
-  margin: 0 0 2vh 0;
+  margin: 2vh 0 2vh 0;
 }
 .form-container .form-field {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
-.form-container .form-btn {
-  display: inline-block;
-  width: 30%;
+.form-container .form-field button {
+  width: 80%;
   height: 2rem;
-  bottom: 0;
   cursor: pointer;
   font-size: 20px;
 }
 
 .footer {
   width: 100%;
+  margin: 0 auto;
   height: 20px;
   margin-top: 10px;
 }
@@ -409,7 +410,8 @@ button:hover::before, button:hover::after, button:focus::before, button:focus::a
 }
 
 body {
-  width: 96%;
+  width: 100%;
+  margin: 0 auto;
   background-color: rgb(97, 12, 208);
   font-family: "Poppins", sans-serif;
 }
