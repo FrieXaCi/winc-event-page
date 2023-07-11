@@ -24,7 +24,7 @@ export const EventPage = ({ onClick }) => {
         <h2>{event.location}</h2>
 
         <img className="big-image" src={event.image} alt={event.title} />
-        <p>{event.description}</p>
+        <p className="description">{event.description}</p>
       </section>
       <p>
         {new Date(event.startTime).toLocaleDateString([], {

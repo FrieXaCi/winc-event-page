@@ -1,8 +1,8 @@
 .event-page-container {
   margin-top: 5px;
   margin-bottom: 15px;
-  padding: 10px;
-  width: 100%;
+
+  width: $width;
   height: auto;
   @include flex;
   gap: 10px;
@@ -10,26 +10,21 @@
   color: $pri-text;
   font-size: 0.7rem;
   .card-body-event {
+    @include flex;
+    gap: 10px;
     margin: $marge;
     img {
       width: 250px;
       height: 250px;
       border-radius: 1rem;
     }
-    p {
-      width: 250px;
-      height: auto;
-    }
   }
-  img {
-    width: 250px;
-    height: 250px;
-    border-radius: 1rem;
+  .description {
+    width: $width;
+    padding: 10px;
+    background-color: $sec-background;
   }
-  /*  p {
-    width: 250px;
-    height: auto;
-  } */
+
   .time-container {
     margin: 0;
     display: flex;

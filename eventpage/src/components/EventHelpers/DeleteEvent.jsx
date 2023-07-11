@@ -13,7 +13,7 @@ export const DeleteEvent = ({ id }) => {
   const navigate = useNavigate();
   const handleDelete = () => {
     if (window.confirm('Are you 100% sure you want to delete this event?')) {
-      sendRequest('events', 'DELETE', null, id)
+      sendRequest('events', 'DELETE', null)
         .then(() => {
           toast.success('🦄 Event succesfully deleted', {
             icon: <img src={toastSuccesCat} />,

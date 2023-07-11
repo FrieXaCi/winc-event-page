@@ -8,7 +8,7 @@ export const HomePage = () => {
     <section className="home-page-container">
       <Link to="/events">
         <section className="homepage-title">
-          <h1>See all events</h1>
+          <h1>Cat Party Calendar</h1>
         </section>
         <article className="homepage-article">
           <p>
@@ -17,6 +17,9 @@ export const HomePage = () => {
             to celebrate your fur-babies. From birthday bashes to costume
             carnivals, let your kitties join the fun. Get your paws on our
             calendar and turn every day into a feline fiesta!
+            <br></br>
+            <br></br>
+            Enter to see all events:
           </p>
         </article>
       </Link>
