@@ -22,6 +22,8 @@
     h1 {
       text-align: center;
       color: $pri-text;
+      font-family: $header;
+      text-shadow: #fc0 1px 0 10px;
     }
   }
 
@@ -40,6 +42,51 @@
       text-align: center;
       color: $pri-text;
       font-weight: 600;
+    }
+  }
+  // tablets
+  @media screen and (min-width: 401px) {
+    .homepage-article {
+      margin-top: 80px;
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  // laptop
+  @media screen and (min-width: 801px) {
+    .homepage-article {
+      margin-top: 200px;
+      // background-color: transparent;
+      p {
+        color: $sec-text;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  // big screens
+  @media screen and (min-width: 1024px) {
+    .homepage-title {
+      height: 90px;
+      width: 1024px;
+
+      h1 {
+        text-align: center;
+        color: $sec-background;
+        font-size: 2.5rem;
+      }
+    }
+    .homepage-article {
+      margin-top: 70px;
+      padding: 10px;
+      background-color: transparent;
+      p {
+        width: 1024px;
+        text-align: center;
+        color: $sec-text;
+        font-size: 0.9rem;
+      }
     }
   }
 }

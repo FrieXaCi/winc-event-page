@@ -1,10 +1,22 @@
 .root-header {
   width: $width;
-  height: 50px;
+  height: 60px;
+  margin-bottom: 10px;
   padding: 10px;
   text-align: center;
   color: $pri-text;
   font-family: $header;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 2px;
+  text-shadow: #fc0 1px 0 10px;
+}
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .root-header {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 801px) {
+  .root-header {
+    font-size: 2rem;
+  }
 }

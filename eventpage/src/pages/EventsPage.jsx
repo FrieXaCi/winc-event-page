@@ -92,7 +92,9 @@ export const EventsPage = () => {
                 </section>
 
                 <section className="card-body">
-                  <img src={event.image} alt={event.title} />
+                  <section className="events-image-container">
+                    <img src={event.image} alt={event.title} />
+                  </section>
 
                   <section className="card-body-items">
                     <p>Location: {event.location}</p>

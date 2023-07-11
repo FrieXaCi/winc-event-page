@@ -43,10 +43,11 @@
     overflow-x: hidden;
     text-align: center;
     border-radius: 1rem;
+    gap: 5px;
     .card {
       width: $width;
       height: 400px;
-      border: 2px double $line-color;
+      border: 3px double $line-color;
       border-radius: 1rem;
       background-color: $pri-background;
 
@@ -62,21 +63,22 @@
         }
         p {
           font-size: 0.7rem;
-          color: $sec-text;
+          color: $sec-background;
         }
       }
       .card-body {
         margin-bottom: 5px;
         width: $width;
         display: flex;
-        align-items: start;
+        align-items: center;
         justify-content: start;
         gap: 2rem;
         font-size: 0.6rem;
         img {
-          margin-left: 20px;
           width: 75px;
           height: 75px;
+          border-radius: 0 1rem 1rem 0;
+          box-shadow: #fc0 1px 0 10px;
         }
         .card-body-items {
           display: flex;
@@ -101,8 +103,14 @@
   }
 
   // media queries
-  // tablet
-  @media screen and (min-width: 400px) and (max-width: 1025px) {
+  // screens bigger then 800px
+  @media screen and (min-width: 800px) {
+    .header-container {
+      margin: 5px;
+      width: 1024px;
+      @include flex;
+      gap: 5px;
+    }
     .card-container {
       width: 700px;
       height: 800px;
@@ -115,17 +123,15 @@
           }
           p {
             font-size: 1rem;
-            color: $pri-text;
           }
         }
         .card-body {
           display: flex;
           align-items: center;
-          justify-content: space-evenly;
-          gap: 1rem;
+          justify-content: start;
+          gap: 2rem;
           font-size: 1rem;
           img {
-            margin-left: 0px;
             width: 150px;
             height: 150px;
           }
