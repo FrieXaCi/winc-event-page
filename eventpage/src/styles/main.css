@@ -122,11 +122,22 @@
   }
 }
 @media screen and (min-width: 801px) {
+  .home-page-container .homepage-title {
+    height: 90px;
+    width: 800px;
+  }
+  .home-page-container .homepage-title h1 {
+    color: #cf21b8;
+    font-size: 2.5rem;
+  }
   .home-page-container .homepage-article {
-    margin-top: 200px;
+    margin-top: 75px;
+    background-color: transparent;
   }
   .home-page-container .homepage-article p {
-    color: #0a050b;
+    width: 780px;
+    text-align: center;
+    color: #cf21b8;
     font-size: 0.9rem;
   }
 }
@@ -141,14 +152,14 @@
     font-size: 2.5rem;
   }
   .home-page-container .homepage-article {
-    margin-top: 70px;
+    margin-top: 50px;
     padding: 10px;
     background-color: transparent;
   }
   .home-page-container .homepage-article p {
-    width: 1024px;
+    width: 900px;
     text-align: center;
-    color: #0a050b;
+    color: #cf21b8;
     font-size: 0.9rem;
   }
 }
@@ -237,7 +248,7 @@
   background-color: rgb(97, 12, 208);
 }
 .card-page-container .card-container .card .card-header {
-  margin: 5px, auto;
+  margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -247,15 +258,20 @@
 .card-page-container .card-container .card .card-header h1 {
   font-size: 1.1rem;
 }
+.card-page-container .card-container .card .card-header h3 {
+  font-size: 0.9rem;
+  color: #0a050b;
+}
 .card-page-container .card-container .card .card-header p {
   font-size: 0.7rem;
   color: #cf21b8;
+  margin-bottom: 10px;
 }
 .card-page-container .card-container .card .card-body {
   margin-bottom: 5px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   gap: 2rem;
   font-size: 0.6rem;
@@ -270,6 +286,16 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 5px;
+}
+.card-page-container .card-container .card .card-body .card-body-items .time-container {
+  display: inline-flexbox;
+}
+.card-page-container .card-container .card .card-body .card-body-items .time-container .time-display {
+  display: flex;
+}
+.card-page-container .card-container .card .card-body .card-body-items .time-container .time-display p {
+  margin-right: 5px;
 }
 .card-page-container .pagination {
   text-align: center;
@@ -293,6 +319,9 @@
     justify-content: center;
     gap: 5px;
   }
+  .card-page-container .header-container .events-title {
+    width: 720px;
+  }
   .card-page-container .card-container {
     width: 700px;
     height: 800px;
@@ -304,12 +333,15 @@
   .card-page-container .card-container .card .card-header h1 {
     font-size: 1.5rem;
   }
+  .card-page-container .card-container .card .card-header h3 {
+    font-size: 1.2rem;
+  }
   .card-page-container .card-container .card .card-header p {
     font-size: 1rem;
   }
   .card-page-container .card-container .card .card-body {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: start;
     gap: 2rem;
     font-size: 1rem;
@@ -317,9 +349,6 @@
   .card-page-container .card-container .card .card-body img {
     width: 150px;
     height: 150px;
-  }
-  .card-page-container .card-container .card .card-body .card-body-items {
-    display: flex;
   }
 }
 
@@ -352,19 +381,14 @@
 }
 .event-page-container .description {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   background-color: #cf21b8;
 }
-.event-page-container .time-container {
-  margin: 0;
+.event-page-container .time-container .time-display {
   display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  align-items: center;
 }
-.event-page-container .time-container p {
-  width: 100px;
-  text-align: left;
+.event-page-container .time-container .time-display p {
+  margin-right: 5px;
 }
 .event-page-container .user-container {
   width: 90%;
@@ -388,6 +412,28 @@
 .event-page-container button {
   width: 100px;
 }
+@media screen and (min-width: 800px) {
+  .event-page-container .description {
+    width: 800px;
+    padding: 15px;
+    background-color: #cf21b8;
+  }
+  .event-page-container .time-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .event-page-container .time-container .time-display {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  .event-page-container .time-container .time-display p {
+    margin-right: 5px;
+  }
+  .event-page-container .user-container {
+    width: 600px;
+  }
+}
 
 .form-container {
   display: flex;
@@ -404,13 +450,13 @@
   display: block;
   text-align: center;
   font-size: 20px;
-  margin: 0 0 2vh 0;
+  margin: 0 0 15px 0;
 }
 .form-container input {
   display: block;
   width: 100%;
   padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  margin: 0.9vw 0;
+  margin: 9px 0;
   border: 0;
   border-radius: 5px;
   font-size: 20px;

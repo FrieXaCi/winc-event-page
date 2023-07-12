@@ -1,5 +1,5 @@
 const ROOT_URL = 'http://localhost:3000/';
-
+// request to json server
 export const sendRequest = async (endpoint, method, data = null, id = null) => {
   const url = id ? `${ROOT_URL}${endpoint}/${id}` : `${ROOT_URL}${endpoint}`;
 

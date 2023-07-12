@@ -8,10 +8,10 @@ import { Navigation } from './Navigation';
 // components/oi
 import { sendRequest } from '../oi/Api';
 
+// get users and categories
 export const loader = async () => {
   const users = await sendRequest('users', 'GET', null);
   const categories = await sendRequest('categories', 'GET', null);
-
   return { users, categories };
 };
 

@@ -1,12 +1,12 @@
 @use 'sass:color';
 // One-stop magic hue shift
-$hue: 277deg; // change me (0deg-360deg)
-$hue-adjust: 135deg; // and me
+$hue: 277deg;
+$hue-adjust: 135deg;
 
 $hue-contrast: color.hue(color.adjust(hsl($hue, 100%, 50%), $hue: $hue-adjust));
 
 button {
-  // We're using HSL values, so we can use hsla() and control opacity when required
+  // hsla() and control opacity when required
   // hsla(hue, saturation, lightness, opacity)
 
   --text-base: #{$hue}, 35%, 90%;

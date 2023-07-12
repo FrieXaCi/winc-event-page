@@ -11,6 +11,7 @@ import { sendRequest } from '../oi/Api';
 import toastErrorCat from '../../images/toast-error-cat-create.jpg';
 import toastSuccesCat from '../../images/toast-succes-cat-create.jpg';
 
+// send data to server
 export const action = async ({ request }) => {
   const formData = await request.formData();
   const postData = Object.fromEntries(formData);
@@ -61,15 +62,15 @@ export const action = async ({ request }) => {
     );
   }
 
-  return null; // Returning null as the response is not used in this case
+  return null;
 };
 
 // get users and categories from json server
 export const NewEvent = () => {
   // to use users and categories from jsonserver
   const { users, categories } = useOutletContext();
-
   //console.log(users, categories);
+
   // form to create new event
   return (
     <section className="form-page">

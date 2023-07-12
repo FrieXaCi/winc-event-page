@@ -1,7 +1,6 @@
 .event-page-container {
   margin-top: 5px;
   margin-bottom: 15px;
-
   width: $width;
   height: auto;
   @include flex;
@@ -21,21 +20,17 @@
   }
   .description {
     width: $width;
-    padding: 10px;
+    padding: 15px;
     background-color: $sec-background;
   }
 
-  .time-container {
-    margin: 0;
+  .time-container .time-display {
     display: flex;
-    flex-wrap: no-wrap;
-    justify-content: center;
-    align-items: center;
     p {
-      width: 100px;
-      text-align: left;
+      margin-right: 5px;
     }
   }
+
   .user-container {
     width: 90%;
     height: 65px;
@@ -59,5 +54,28 @@
   button {
     width: 100px;
   }
+
+  // display tablet and screens bigger then 800px
+  @media screen and (min-width: 800px) {
+    .description {
+      width: 800px;
+      padding: 15px;
+      background-color: $sec-background;
+    }
+    .time-container {
+      display: flex;
+      flex-direction: column;
+      .time-display {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        p {
+          margin-right: 5px;
+        }
+      }
+    }
+    .user-container {
+      width: 600px;
+    }
+  }
 }
-// display tablet

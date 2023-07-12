@@ -5,10 +5,12 @@ import { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
+  // set url params to filter categories
   const [searchParams, setSearchParams] = useSearchParams();
   const typeFilter = searchParams.get('categoryIds');
   // console.log(typeFilter);
 
+  // to select categories
   useEffect(() => {
     const displayedEvents = typeFilter
       ? filterEvent.filter(
@@ -19,6 +21,7 @@ export const FilterEvent = ({ filterEvent, setFilterEvent }) => {
     setFilterEvent(displayedEvents);
   }, [typeFilter, filterEvent, setFilterEvent]);
 
+  // display buttons to select categorie
   return (
     <div>
       <button

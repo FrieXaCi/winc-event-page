@@ -1,5 +1,7 @@
+// imports from libraries
 // react-router-dom
 import { Form } from 'react-router-dom';
+
 //  to sort all events by name, date or category
 export const SortEvent = ({ setFilterEvent, events }) => {
   // get data to sort on category

@@ -56,11 +56,22 @@
   }
   // laptop
   @media screen and (min-width: 801px) {
+    .homepage-title {
+      height: 90px;
+      width: 800px;
+
+      h1 {
+        color: $sec-background;
+        font-size: 2.5rem;
+      }
+    }
     .homepage-article {
-      margin-top: 200px;
-      // background-color: transparent;
+      margin-top: 75px;
+      background-color: transparent;
       p {
-        color: $sec-text;
+        width: 780px;
+        text-align: center;
+        color: $sec-background;
         font-size: 0.9rem;
       }
     }
@@ -78,13 +89,13 @@
       }
     }
     .homepage-article {
-      margin-top: 70px;
+      margin-top: 50px;
       padding: 10px;
       background-color: transparent;
       p {
-        width: 1024px;
+        width: 900px;
         text-align: center;
-        color: $sec-text;
+        color: $sec-background;
         font-size: 0.9rem;
       }
     }

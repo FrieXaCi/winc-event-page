@@ -1,4 +1,5 @@
 // imports from librarie
+// react-router-dom
 import {
   redirect,
   useLoaderData,
@@ -14,10 +15,10 @@ import { sendRequest } from '../oi/Api';
 import toastErrorCat from '../../images/toast-error-cat-update.jpg';
 import toastSuccesCat from '../../images/toast-succes-cat-update.jpg';
 
+// send updated data to server
 export const action = async ({ request, params }) => {
   const formData = await request.formData();
   const postData = Object.fromEntries(formData);
-
   try {
     const response = await sendRequest(
       'events',
@@ -69,19 +70,20 @@ export const action = async ({ request, params }) => {
     );
   }
 
-  return null; // Returning null as the response is not used in this case
+  return null;
 };
 
+// get events-data from json server
 export const loader = async ({ params }) => {
   const event = await sendRequest('events', 'GET', null, params.eventId);
-
   return { event };
 };
 
 export const UpdateEvent = () => {
+  // get all data
   const { event } = useLoaderData();
   const { users, categories } = useOutletContext();
-
+  // form to update event
   return (
     <>
       <div className="form-container">

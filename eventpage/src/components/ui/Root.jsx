@@ -4,7 +4,6 @@ import { Outlet } from 'react-router-dom';
 // components/ ui
 import { Header } from './Header';
 import { Footer } from './Footer';
-// components/oi
 
 export const Root = () => {
   return (

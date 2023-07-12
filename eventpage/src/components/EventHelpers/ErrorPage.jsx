@@ -1,6 +1,7 @@
 // imports from libraries
 import { Link, useRouteError } from 'react-router-dom';
 // imports from files
+// images
 import errorCat from '../../images/errorCat.jpg';
 
 export const ErrorPage = () => {

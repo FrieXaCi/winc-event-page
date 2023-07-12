@@ -53,11 +53,11 @@
       "title": "purrfect sunday",
       "description": "Calling all chill cats! Prepare to embrace the art of relaxation at the Purrrfect Sunday Lazy theme party. Wallow in the lap of luxury as we transform our party space into a haven of cozy comfort. Lounge on plush cushions, bask in the warm sunlight, and indulge in a menu of gourmet treats right at your whiskers. Engage in leisurely activities, such as cat yoga, gentle massages, and soothing grooming sessions. Unwind with soothing tunes and delightful company. This lazy-themed event will make your Sunday purrrfectly blissful, leaving you feline fine and ready for another lazy week ahead.",
       "image": "https://www.lolwot.com/wp-content/uploads/2015/06/20-lazy-cats-that-will-make-you-lol-20.jpg",
-      "location": "every where it is comfortable",
+      "location": "Comfortable places",
       "categoryIds": "2",
       "startTime": "2023-11-28T09:00",
       "endTime": "2023-11-28T23:00",
-      "createdBy": "2",
+      "createdBy": "1",
       "id": 26
     },
     {
@@ -347,15 +347,15 @@
       "id": 152
     },
     {
-      "title": "",
-      "description": "",
-      "image": "",
-      "location": "",
-      "categoryIds": "1",
-      "startTime": "",
-      "endTime": "",
-      "createdBy": "5",
-      "id": 153
+      "title": "try a new event",
+      "description": "we gponna change this ;ater",
+      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
+      "location": "Amsterdam",
+      "categoryIds": "3",
+      "startTime": "2024-04-13T13:00",
+      "endTime": "22:00",
+      "createdBy": "4",
+      "id": 154
     }
   ],
   "categories": [
@@ -372,7 +372,7 @@
       "id": 3
     },
     {
-      "name": "Education",
+      "name": "School",
       "id": 4
     }
   ]

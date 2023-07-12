@@ -17,7 +17,6 @@ import { EventPage, loader as eventLoader } from './pages/EventPage';
 // EventHelpers
 import {
   NewEvent,
-  // loader as newEventLoader,
   action as addNewEvent,
 } from './components/EventHelpers/NewEvent';
 
@@ -63,16 +62,12 @@ const router = createBrowserRouter([
             path: 'event/:eventId',
             element: <EventPage />,
             loader: eventLoader,
-
-            // action: addComment,
           },
           {
             path: '/event/new',
             element: <NewEvent />,
-            // loader: newEventLoader,
             action: addNewEvent,
           },
-
           {
             path: '/event/:eventId/update',
             element: <UpdateEvent />,
@@ -81,7 +76,6 @@ const router = createBrowserRouter([
           },
         ],
       },
-
       { path: '*', element: <ErrorPage /> },
     ],
   },

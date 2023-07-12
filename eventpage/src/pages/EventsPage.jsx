@@ -85,6 +85,7 @@ export const EventsPage = () => {
               <Link to={`/event/${event.id}`}>
                 <section className="card-header">
                   <h1>{event.title}</h1>
+                  <h3>Location: {event.location}</h3>
                   <p>
                     {event.description.slice(0, 20)}
                     {event.description.length > 20 ? '.....' : ''}
@@ -97,29 +98,47 @@ export const EventsPage = () => {
                   </section>
 
                   <section className="card-body-items">
-                    <p>Location: {event.location}</p>
-                    <p>
-                      {new Date(event.startTime).toLocaleDateString([], {
-                        year: 'numeric',
-                        month: 'long',
-                        day: '2-digit',
-                      })}
-                    </p>
-                    <p>
-                      Starts at:{' '}
-                      {new Date(event.startTime).toLocaleTimeString([], {
-                        hour: '2-digit',
-                        minute: '2-digit',
-                      })}
-                    </p>
-                    <p>
-                      Ends at:{' '}
-                      {new Date(event.endTime).toLocaleTimeString([], {
-                        hour: '2-digit',
-                        minute: '2-digit',
-                      })}
-                    </p>
-                    <div>
+                    <section className="time-container">
+                      <section className="time-display">
+                        <p>Starts at: </p>
+                        <p>
+                          {new Date(event.startTime).toLocaleDateString([], {
+                            year: 'numeric',
+                            month: 'numeric',
+                            day: '2-digit',
+                          })}
+                        </p>
+                      </section>
+                      <section className="time-display">
+                        <p>Time: </p>
+                        <p>
+                          {new Date(event.startTime).toLocaleTimeString([], {
+                            hour: '2-digit',
+                            minute: '2-digit',
+                          })}
+                        </p>
+                      </section>
+                      <section className="time-display">
+                        <p>Ends at:</p>
+                        <p>
+                          {new Date(event.endTime).toLocaleDateString([], {
+                            year: 'numeric',
+                            month: 'numeric',
+                            day: '2-digit',
+                          })}
+                        </p>
+                      </section>
+                      <section className="time-display">
+                        <p>Time:</p>
+                        <p>
+                          {new Date(event.endTime).toLocaleTimeString([], {
+                            hour: '2-digit',
+                            minute: '2-digit',
+                          })}
+                        </p>
+                      </section>
+                    </section>
+                    <section>
                       {categories.map((categorie) =>
                         event.categoryIds?.includes(categorie.id) ? (
                           <div key={categorie.id}>
@@ -127,7 +146,7 @@ export const EventsPage = () => {
                           </div>
                         ) : null
                       )}
-                    </div>
+                    </section>
                   </section>
                 </section>
               </Link>
