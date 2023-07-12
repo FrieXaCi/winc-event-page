@@ -383,6 +383,7 @@
   width: 100%;
   padding: 15px;
   background-color: #cf21b8;
+  border-radius: 1rem;
 }
 .event-page-container .time-container .time-display {
   display: flex;
@@ -413,10 +414,17 @@
   width: 100px;
 }
 @media screen and (min-width: 800px) {
+  .event-page-container .event-page-container {
+    width: 600px;
+  }
+  .event-page-container h1 {
+    font-size: 2rem;
+  }
   .event-page-container .description {
-    width: 800px;
+    width: 600px;
     padding: 15px;
     background-color: #cf21b8;
+    font-size: 0.9rem;
   }
   .event-page-container .time-container {
     display: flex;
@@ -429,9 +437,14 @@
   }
   .event-page-container .time-container .time-display p {
     margin-right: 5px;
+    font-size: 0.9rem;
+  }
+  .event-page-container .categorie-container {
+    font-size: 0.9rem;
   }
   .event-page-container .user-container {
     width: 600px;
+    font-size: 0.9rem;
   }
 }
 

@@ -22,6 +22,7 @@
     width: $width;
     padding: 15px;
     background-color: $sec-background;
+    border-radius: 1rem;
   }
 
   .time-container .time-display {
@@ -57,10 +58,18 @@
 
   // display tablet and screens bigger then 800px
   @media screen and (min-width: 800px) {
+    .event-page-container {
+      width: 600px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
     .description {
-      width: 800px;
+      width: 600px;
       padding: 15px;
       background-color: $sec-background;
+      font-size: 0.9rem;
     }
     .time-container {
       display: flex;
@@ -71,11 +80,16 @@
         align-items: start;
         p {
           margin-right: 5px;
+          font-size: 0.9rem;
         }
       }
     }
+    .categorie-container {
+      font-size: 0.9rem;
+    }
     .user-container {
       width: 600px;
+      font-size: 0.9rem;
     }
   }
 }

@@ -25,7 +25,7 @@ export const EventPage = ({ onClick }) => {
         <h1>{event.title} </h1>
         <h2>{event.location}</h2>
 
-        <img className="big-image" src={event.image} alt={event.title} />
+        <img src={event.image} alt={event.title} />
         <p className="description">{event.description}</p>
       </section>
       <section className="time-container">
@@ -65,7 +65,7 @@ export const EventPage = ({ onClick }) => {
           </p>
         </section>
       </section>
-      <section>
+      <section className="categorie-container">
         {categories.map((categorie) =>
           event.categoryIds?.includes(categorie.id) ? (
             <section key={categorie.id}>
@@ -95,6 +95,9 @@ export const EventPage = ({ onClick }) => {
         <DeleteEvent onclick={onClick} id={event.id} />
         <Link to={`/event/${event.id}/update`}>
           <button>Edit event</button>
+        </Link>
+        <Link to="/events">
+          <button>Back to events</button>
         </Link>
       </section>
     </section>

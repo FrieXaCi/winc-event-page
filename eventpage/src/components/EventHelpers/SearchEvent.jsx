@@ -1,4 +1,5 @@
 // import form libraries
+// react-icons
 import { FaSistrix } from 'react-icons/fa';
 
 // to search for events
