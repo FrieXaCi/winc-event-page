@@ -104,7 +104,7 @@ export const NewEvent = () => {
             <label> Starts at:</label>
             <input type="datetime-local" name="startTime" />
             <label>Ends at:</label>
-            <input type="time" name="endTime" />
+            <input type="datetime" name="endTime" />
             <label>Select User</label>
             <select name="createdBy" placeholder="Select user">
               <option value="default">Choose a User</option>
