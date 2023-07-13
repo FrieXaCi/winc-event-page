@@ -1,6 +1,9 @@
 # winc_event_page_sass
 Final project frontend development for WincAcademy:
 
+see the project on youtube:
+https://youtu.be/6SX0RZOq69s
+
 Requirements:
 The app contains a form.
 You have used React Router.
