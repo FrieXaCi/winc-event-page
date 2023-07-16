@@ -2,7 +2,7 @@
 Final project frontend development for WincAcademy:
 
 see the project on youtube:
-https://youtu.be/6SX0RZOq69s
+https://youtu.be/42qYb3WVA30
 
 Requirements:
 The app contains a form.
